@@ -14,23 +14,19 @@ const ZonasDeReparto = () => {
 
           <div className="space-y-6 text-ocreamy-brown-light">
             <p>
-              En O'Creamy queremos que disfrutes de nuestros postres donde quiera que estés. Por eso,
-              ofrecemos servicio de delivery a diversas zonas de Lima.
+              En O'Creamy realizamos entregas en zonas cercanas a Mall Aventura Santa Anita. Para confirmar si llegamos a tu ubicación, por favor contáctanos por{" "}
+              <a
+                href="https://wa.link/4rvzrv"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-ocreamy-red hover:underline font-semibold"
+              >
+                WhatsApp
+              </a>
             </p>
 
             <p>
-              Actualmente realizamos entregas a domicilio en los siguientes distritos: Santa Anita, Ate,
-              La Molina, San Luis, El Agustino, y zonas aledañas.
-            </p>
-
-            <p>
-              Los pedidos se realizan únicamente a través de WhatsApp. El costo de delivery puede variar
-              según la distancia y se confirmará al momento de tu pedido.
-            </p>
-
-            <p>
-              Si no estás seguro de si llegamos a tu zona, no dudes en consultarnos. Siempre buscamos la
-              manera de llevarte nuestros postres que roban corazones.
+              Nuestro equipo estará encantado de ayudarte y coordinar los detalles de tu pedido para que disfrutes nuestras obleas y fresas con crema en la comodidad de tu hogar. 🍓💞
             </p>
 
             <div className="flex justify-center pt-6">

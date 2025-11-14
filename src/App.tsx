@@ -12,6 +12,7 @@ import PoliticasDePrivacidad from "./pages/PoliticasDePrivacidad";
 import PoliticasDeCookies from "./pages/PoliticasDeCookies";
 import TerminosYCondiciones from "./pages/TerminosYCondiciones";
 import PreguntasFrecuentes from "./pages/PreguntasFrecuentes";
+import PoliticasDeCambios from "./pages/PoliticasDeCambios";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,8 +32,9 @@ const App = () => (
           <Route path="/politicas-de-privacidad" element={<PoliticasDePrivacidad />} />
           <Route path="/politicas-de-cookies" element={<PoliticasDeCookies />} />
           <Route path="/terminos-y-condiciones" element={<TerminosYCondiciones />} />
-          <Route path="/preguntas-frecuentes" element={<PreguntasFrecuentes />} />
-          <Route path="*" element={<NotFound />} />
+        <Route path="/preguntas-frecuentes" element={<PreguntasFrecuentes />} />
+        <Route path="/politicas-de-cambios" element={<PoliticasDeCambios />} />
+        <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

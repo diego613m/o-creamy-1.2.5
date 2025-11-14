@@ -67,6 +67,9 @@ const Footer = () => {
               <Link to="/preguntas-frecuentes" className="transition-colors" style={{ color: 'hsl(var(--muted-foreground))' }}>
                 Preguntas frecuentes
               </Link>
+              <Link to="/politicas-de-cambios" className="transition-colors" style={{ color: 'hsl(var(--muted-foreground))' }}>
+                Política de cambios y devoluciones
+              </Link>
             </div>
           </div>
         </div>

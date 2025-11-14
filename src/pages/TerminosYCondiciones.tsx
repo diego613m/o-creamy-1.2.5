@@ -14,100 +14,74 @@ const TerminosYCondiciones = () => {
 
           <div className="space-y-8">
             <section>
-              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">Aceptación de términos</h2>
+              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">Aceptación de Términos</h2>
               <p className="text-ocreamy-brown-light mb-4">
-                Al realizar un pedido o utilizar nuestros servicios, aceptas estos términos y condiciones.
-                Si no estás de acuerdo con alguno de estos términos, por favor no utilices nuestros
-                servicios.
+                Al acceder y utilizar nuestros servicios, aceptas estar sujeto a estos términos y condiciones.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">Servicio de delivery</h2>
-              <p className="text-ocreamy-brown-light mb-4">
-                Nuestro servicio de delivery está disponible en zonas específicas. Los tiempos de entrega
-                son estimados y pueden variar según las condiciones del tráfico y el clima.
+              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">Pedidos y Pagos</h2>
+              <ul className="list-disc pl-6 space-y-2 text-ocreamy-brown-light">
+                <li>Los pedidos se confirman una vez procesado el pago</li>
+                <li>Los precios están sujetos a cambios sin previo aviso</li>
+                <li>Aceptamos efectivo y transferencias bancarias</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">Delivery</h2>
+              <ul className="list-disc pl-6 space-y-2 text-ocreamy-brown-light">
+                <li>El delivery opera solo dentro de las zonas indicadas.</li>
+                <li>Los tiempos de entrega son referenciales y pueden variar por tráfico o clima.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">Productos</h2>
+              <p className="text-ocreamy-brown-light mb-2">
+                Las imágenes son referenciales, pero representan fielmente el producto real.
               </p>
-              <p className="text-ocreamy-brown-light mb-4">
-                El costo de delivery se calcula según la distancia y se informará al momento de realizar
-                el pedido por{" "}
-                <a
-                  href="https://wa.link/4rvzrv"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-ocreamy-red hover:underline font-semibold"
-                >
-                  WhatsApp
-                </a>
-                .
+              <p className="text-ocreamy-brown-light">
+                Los toppings pueden variar según disponibilidad.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">Pedidos y pagos</h2>
+              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">Cancelaciones</h2>
               <p className="text-ocreamy-brown-light mb-4">
-                Todos los pedidos deben realizarse a través de WhatsApp. Aceptamos pagos en efectivo al
-                momento de la entrega o mediante transferencia bancaria (previa coordinación).
-              </p>
-              <p className="text-ocreamy-brown-light mb-4">
-                Nos reservamos el derecho de rechazar o cancelar pedidos en caso de información
-                incompleta o incorrecta.
+                Las cancelaciones deben realizarse con al menos 30 minutos de anticipación. Después de ese tiempo, el pedido no podrá ser cancelado.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">
-                Cancelaciones y devoluciones
-              </h2>
+              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">Reembolsos</h2>
               <p className="text-ocreamy-brown-light mb-4">
-                Las cancelaciones deben solicitarse con al menos 30 minutos de anticipación antes de la
-                entrega programada. No se aceptan devoluciones una vez que el pedido ha sido entregado,
-                excepto en casos de productos defectuosos o incorrectos.
+                Solo se aplican en casos específicos descritos en la política de cambios y devoluciones.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">Alérgenos</h2>
+              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">Alergias e Intolerancias</h2>
               <p className="text-ocreamy-brown-light mb-4">
-                Nuestros productos pueden contener o haber estado en contacto con alérgenos comunes. Para
-                información detallada, consulta nuestra cartilla de alérgenos o contáctanos por{" "}
-                <a
-                  href="https://wa.link/4rvzrv"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-ocreamy-red hover:underline font-semibold"
-                >
-                  WhatsApp
-                </a>
-                .
+                Es responsabilidad del cliente informar sobre cualquier alergia o intolerancia alimentaria. Consulta nuestra cartilla de alérgenos para más información.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">
-                Responsabilidad
-              </h2>
-              <p className="text-ocreamy-brown-light mb-4">
-                O'Creamy no se hace responsable por reacciones alérgicas si el cliente no ha consultado
-                previamente sobre los ingredientes. Tampoco somos responsables por demoras causadas por
-                factores externos fuera de nuestro control.
+              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">Uso del sitio web</h2>
+              <p className="text-ocreamy-brown-light mb-2">
+                El contenido (logos, imágenes, textos y diseño) pertenece a O'Creamy.
               </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">
-                Modificación de términos
-              </h2>
-              <p className="text-ocreamy-brown-light mb-4">
-                Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento.
-                Los cambios serán efectivos inmediatamente después de su publicación en este sitio web.
+              <p className="text-ocreamy-brown-light">
+                Se prohíbe copiar o reproducir sin autorización.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">Contacto</h2>
               <p className="text-ocreamy-brown-light mb-4">
-                Para consultas sobre estos términos y condiciones, contáctanos por{" "}
+                Para consultas sobre estos términos, contáctanos por{" "}
                 <a
                   href="https://wa.link/4rvzrv"
                   target="_blank"
@@ -116,7 +90,6 @@ const TerminosYCondiciones = () => {
                 >
                   WhatsApp
                 </a>
-                .
               </p>
             </section>
           </div>
