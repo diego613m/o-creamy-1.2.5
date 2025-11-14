@@ -8,42 +8,52 @@ const faqs = [
   {
     question: "¿Dónde están ubicados?",
     answer:
-      "Nos encontramos en Mall Aventura Santa Anita, Nivel 3, Zona Oasis. Nuestro horario de atención es de lunes a domingo de 12:00 pm a 10:00 pm.",
+      "Estamos en Mall Aventura Santa Anita – Nivel 3 (Zona Oasis). Atendemos todos los días de 12:00 pm a 10:00 pm.",
+  },
+  {
+    question: "¿Qué productos venden?",
+    answer:
+      "Somos especialistas en obleas colombianas y fresas con crema, preparadas al instante y con ingredientes frescos. Consulta nuestra página de Menú para ver todos los sabores, tamaños y opciones de toppings.",
   },
   {
     question: "¿Hacen delivery?",
     answer:
-      "Sí, realizamos delivery a diversos distritos de Lima incluyendo Santa Anita, Ate, La Molina, San Luis, El Agustino y zonas aledañas. El costo varía según la distancia. Consulta disponibilidad por WhatsApp.",
+      "Sí. Realizamos delivery mediante: Delivery propio en zonas específicas, Pedidos por WhatsApp, y Recojo en tienda. Consulta la página de Zonas de Reparto para ver las áreas disponibles.",
   },
   {
-    question: "¿Cómo puedo hacer un pedido?",
+    question: "¿Cómo se realizan los pagos?",
     answer:
-      "Puedes hacer tu pedido directamente por WhatsApp al +51 963 807 150 o visitarnos en nuestro local en Mall Aventura Santa Anita.",
+      "Los pagos son anticipados para confirmar tu pedido. Aceptamos: Yape / Plin, Tarjeta (POS), Transferencia, y Efectivo en tienda.",
   },
   {
-    question: "¿Qué métodos de pago aceptan?",
+    question: "¿Puedo pedir sin pagar primero?",
     answer:
-      "Aceptamos pago en efectivo al momento de la entrega y también transferencias bancarias (previa coordinación).",
+      "No. Todos los pedidos deben estar pagados antes de ser preparados.",
   },
   {
-    question: "¿Puedo personalizar mi postre?",
+    question: "¿Puedo personalizar mi pedido?",
     answer:
-      "¡Por supuesto! Ofrecemos diversos toppings clásicos y premium para que personalices tu oblea o fresas con crema. Consulta las opciones en nuestra carta.",
+      "Sí. Puedes agregar toppings clásicos, toppings premium o retirar algún ingrediente si lo deseas.",
   },
   {
-    question: "¿Los productos contienen alérgenos?",
+    question: "¿Hacen envíos a todo Lima?",
     answer:
-      "Nuestros productos pueden contener o haber estado en contacto con lácteos, frutos secos, gluten y otros alérgenos comunes. Para información específica, consulta nuestra cartilla de alérgenos o contáctanos por WhatsApp.",
+      "Por ahora no. Trabajamos con zonas de envío definidas según distancia y disponibilidad.",
   },
   {
-    question: "¿Cuál es el tiempo de entrega?",
+    question: "¿Cuánto demora el delivery?",
     answer:
-      "El tiempo de entrega varía según la zona y las condiciones del tráfico, pero generalmente es entre 30 a 60 minutos. Te confirmaremos un tiempo estimado al realizar tu pedido.",
+      "Usualmente entre 20 y 40 minutos, dependiendo de la hora y el tráfico dentro de la zona de reparto.",
   },
   {
-    question: "¿Puedo cancelar mi pedido?",
+    question: "¿Puedo recoger en tienda?",
     answer:
-      "Sí, puedes cancelar tu pedido comunicándote con nosotros por WhatsApp con al menos 30 minutos de anticipación antes de la entrega programada.",
+      "Claro. Puedes pasar por nuestro local y pedir para llevar o para disfrutar en el mall.",
+  },
+  {
+    question: "¿Las obleas se ablandan?",
+    answer:
+      "Recomendamos consumirlas inmediatamente, ya que la oblea es crocante y con el tiempo absorbe humedad.",
   },
 ];
 
