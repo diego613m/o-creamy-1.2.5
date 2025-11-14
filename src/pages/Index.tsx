@@ -41,7 +41,9 @@ const Index = () => {
 
       <main>
         {/* Hero */}
-        <HeroCarousel />
+        <div className="pt-20">
+          <HeroCarousel />
+        </div>
 
         {/* ¡Antójate hoy! */}
         <section className="oc-section bg-white">
@@ -179,7 +181,7 @@ const Index = () => {
           <div className="oc-container">
             <h2 className="oc-section-title">Lo que dicen nuestros clientes</h2>
             <div className="flex justify-center">
-              <div className="relative max-w-2xl w-full">
+              <div className="relative max-w-md w-full">
                 {testimonials.map((img, idx) => (
                   <div
                     key={idx}
@@ -221,7 +223,11 @@ const Index = () => {
               Visítanos o haz tu pedido por WhatsApp
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link to="/menu" className="btn btn-outline-light">
+              <Link 
+                to="/menu" 
+                className="btn inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-semibold transition-all hover:scale-105 h-10 px-4 py-2"
+                style={{ backgroundColor: '#836140', color: '#ffffff' }}
+              >
                 Ver Carta
               </Link>
               <a

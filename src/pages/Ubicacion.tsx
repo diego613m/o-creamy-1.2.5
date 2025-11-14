@@ -98,28 +98,28 @@ const Ubicacion = () => {
               </div>
             </div>
           </section>
-
-          {/* CTA */}
-          <section className="oc-section bg-ocreamy-red text-white rounded-2xl">
-            <div className="text-center">
-              <h2 className="text-[clamp(1.8rem,2.4vw,2.4rem)] font-bold mb-4">¡Te esperamos!</h2>
-              <p className="text-lg mb-6">Visítanos o haz tu pedido por WhatsApp</p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <Link to="/menu" className="btn btn-brown">
-                  Ver Carta
-                </Link>
-                <a
-                  href="https://wa.link/4rvzrv"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-wa"
-                >
-                  Pedir por WhatsApp
-                </a>
-              </div>
-            </div>
-          </section>
         </div>
+
+        {/* CTA */}
+        <section className="oc-section bg-ocreamy-red text-white w-full">
+          <div className="oc-container text-center">
+            <h2 className="text-[clamp(1.8rem,2.4vw,2.4rem)] font-bold mb-4">¡Te esperamos!</h2>
+            <p className="text-lg mb-6">Visítanos o haz tu pedido por WhatsApp</p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link to="/menu" className="btn btn-brown">
+                Ver Carta
+              </Link>
+              <a
+                href="https://wa.link/4rvzrv"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-wa"
+              >
+                Pedir por WhatsApp
+              </a>
+            </div>
+          </div>
+        </section>
       </main>
 
       {/* Mobile Sheet */}
