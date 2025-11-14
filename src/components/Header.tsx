@@ -27,11 +27,11 @@ const Header = () => {
 
   return (
     <>
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'}`}>
+      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-background shadow-sm'}`}>
         <div className="oc-container">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link to="/" className="relative h-14 w-auto">
+            <Link to="/" className="relative h-[67px] w-auto">
               <img
                 src="https://res.cloudinary.com/dw1eowmmp/image/upload/v1762620585/LOGO_IMAGE_pwhxed.png"
                 alt="O'Creamy Logo"
@@ -84,7 +84,7 @@ const Header = () => {
                 className="w-10 h-10 rounded-full bg-[#25D366] flex items-center justify-center transition-all hover:scale-110"
                 aria-label="WhatsApp"
               >
-                <MessageCircle size={20} className="text-white" />
+                <MessageCircle size={20} className="text-white fill-white" />
               </a>
 
               {/* Ver Carta Button */}
