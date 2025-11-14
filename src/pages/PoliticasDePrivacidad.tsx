@@ -13,53 +13,64 @@ const PoliticasDePrivacidad = () => {
           <h1 className="oc-page-title">Políticas de privacidad</h1>
 
           <div className="space-y-8">
-            <section>
-              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">Protección de Datos</h2>
-              <p className="text-ocreamy-brown-light mb-4">
-                En O'Creamy respetamos tu privacidad y nos comprometemos a proteger tus datos personales.
-                Esta política explica cómo recopilamos, usamos y protegemos tu información.
-              </p>
-            </section>
+            <p className="text-ocreamy-brown-light">
+              En O'Creamy valoramos tu privacidad y protegemos tus datos personales conforme a la Ley N.º 29733 – Ley de Protección de Datos Personales del Perú.
+            </p>
 
             <section>
-              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">
-                Información que Recopilamos
-              </h2>
-              <p className="text-ocreamy-brown-light mb-4">
-                Cuando realizas un pedido a través de WhatsApp, recopilamos tu nombre, número de teléfono
-                y dirección de entrega. Esta información es utilizada exclusivamente para procesar y
-                entregar tu pedido.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">Uso de la Información</h2>
-              <p className="text-ocreamy-brown-light mb-4">
-                Tu información personal se utiliza para:
-              </p>
+              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">1. Datos que recopilamos</h2>
               <ul className="list-disc pl-6 space-y-2 text-ocreamy-brown-light">
-                <li>Procesar y entregar tus pedidos</li>
-                <li>Comunicarnos contigo sobre tu pedido</li>
-                <li>Mejorar nuestros productos y servicios</li>
-                <li>Enviarte información promocional (solo si has dado tu consentimiento)</li>
+                <li>Nombre y apellido</li>
+                <li>Número de teléfono</li>
+                <li>Dirección de entrega</li>
+                <li>Métodos de pago utilizados</li>
+                <li>Historial de pedidos</li>
+                <li>Información enviada voluntariamente por WhatsApp o formularios del sitio</li>
               </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">
-                Seguridad de tus Datos
-              </h2>
-              <p className="text-ocreamy-brown-light mb-4">
-                Implementamos medidas de seguridad para proteger tu información personal contra acceso no
-                autorizado, alteración o destrucción.
+              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">2. ¿Para qué usamos tu información?</h2>
+              <ul className="list-disc pl-6 space-y-2 text-ocreamy-brown-light">
+                <li>Procesar y entregar pedidos</li>
+                <li>Contactarte para coordinar entregas</li>
+                <li>Confirmar pagos</li>
+                <li>Ofrecer soporte antes y después de tu compra</li>
+                <li>Enviar comunicaciones relacionadas con tu pedido</li>
+                <li>Mejorar nuestra experiencia de atención</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">3. ¿Con quién compartimos tu información?</h2>
+              <p className="text-ocreamy-brown-light mb-4">Solo con:</p>
+              <ul className="list-disc pl-6 space-y-2 text-ocreamy-brown-light mb-4">
+                <li>Personal de O'Creamy encargado de preparar y entregar pedidos</li>
+                <li>Servicios de mensajería (si aplica)</li>
+              </ul>
+              <p className="text-ocreamy-brown-light">
+                No vendemos ni cedemos datos personales a terceros.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">Tus Derechos</h2>
+              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">4. Seguridad de la información</h2>
               <p className="text-ocreamy-brown-light mb-4">
-                Tienes derecho a acceder, corregir o eliminar tu información personal en cualquier
-                momento. Para ejercer estos derechos, contáctanos por{" "}
+                Aplicamos medidas razonables de protección para evitar el acceso no autorizado, pérdida o alteración de tus datos.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">5. Derechos del usuario</h2>
+              <p className="text-ocreamy-brown-light mb-4">Puedes solicitar en cualquier momento:</p>
+              <ul className="list-disc pl-6 space-y-2 text-ocreamy-brown-light mb-4">
+                <li>Acceso a tus datos</li>
+                <li>Rectificación</li>
+                <li>Cancelación</li>
+                <li>Oposición</li>
+              </ul>
+              <p className="text-ocreamy-brown-light">
+                Escríbenos por{" "}
                 <a
                   href="https://wa.link/4rvzrv"
                   target="_blank"
@@ -68,33 +79,7 @@ const PoliticasDePrivacidad = () => {
                 >
                   WhatsApp
                 </a>
-                .
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">
-                Cambios a esta Política
-              </h2>
-              <p className="text-ocreamy-brown-light mb-4">
-                Nos reservamos el derecho de actualizar esta política en cualquier momento. Te
-                notificaremos sobre cambios significativos.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold mb-4 text-ocreamy-brown">Contacto</h2>
-              <p className="text-ocreamy-brown-light mb-4">
-                Si tienes preguntas sobre nuestra política de privacidad, contáctanos por{" "}
-                <a
-                  href="https://wa.link/4rvzrv"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-ocreamy-red hover:underline font-semibold"
-                >
-                  WhatsApp
-                </a>
-                .
+                {" "}para gestionar cualquier solicitud.
               </p>
             </section>
           </div>
