@@ -8,42 +8,77 @@ const faqs = [
   {
     question: "¿Dónde están ubicados?",
     answer:
-      "Nos encontramos en Mall Aventura Santa Anita, Nivel 3, Zona Oasis. Nuestro horario de atención es de lunes a domingo de 12:00 pm a 10:00 pm.",
+      "🍓✨ Estamos en Mall Aventura Santa Anita – Nivel 3 (Zona Oasis), justo donde empiezan los antojitos 💕\n\nAtendemos todos los días de 12:00 pm a 10:00 pm, así que siempre tienes un espacio para venir por tu dulzura favorita 😋💖",
+  },
+  {
+    question: "¿Cuál es su horario de atención?",
+    answer:
+      "¡Te esperamos de lunes a domingo de 12:00 pm a 10:00 pm en Mall Aventura Santa Anita, Nivel 3, Zona Oasis! 🍓✨",
+  },
+  {
+    question: "¿Qué productos venden?",
+    answer:
+      "😍 Preparamos obleas colombianas y fresas con crema súper deli, fresquitas y hechas al momento.\n\nSi quieres ver todas las opciones, pasarte por la página de Menú es lo mejor: ahí encuentras tamaños, toppings y todo lo que puedes antojarte 💕🍓✨",
   },
   {
     question: "¿Hacen delivery?",
     answer:
-      "Sí, realizamos delivery a diversos distritos de Lima incluyendo Santa Anita, Ate, La Molina, San Luis, El Agustino y zonas aledañas. El costo varía según la distancia. Consulta disponibilidad por WhatsApp.",
+      '¡Sí! 😄💕\nLlegamos a tu casa/oficina con tu postre bien fresquecito mediante:\n• Delivery en zonas cercanas\n• Recojo en tienda\nPor ahora la cobertura se confirma directamente por <a href="https://wa.link/4rvzrv" target="_blank" rel="noopener noreferrer" class="text-ocreamy-red hover:underline font-semibold">WhatsApp</a> 📲✨\nAhí te decimos rapidito si tu zona está dentro y cuánto sería el envío 🍓💕',
+  },
+  {
+    question: "¿Cuáles son sus métodos de pago?",
+    answer:
+      "En nuestra tienda física aceptamos efectivo, Plin/Yape y tarjetas de débito o crédito 💵💳. Para pedidos por delivery, los pagos se realizan de forma anticipada a través de Plin/Yape o con tarjeta (débito o crédito) mediante un link de pago seguro 🔗✨. De esta manera confirmamos tu pedido y lo preparamos con todo el amor y dulzura que nos caracteriza 🍓💞.",
+  },
+  {
+    question: "¿Puedo pedir sin pagar primero?",
+    answer:
+      "😅💖 No, para que tu antojo se prepare sin demoras y quede perfecto, siempre necesitamos tener el pago confirmado antes de pasar a cocina 🍓✨",
+  },
+  {
+    question: "¿Puedo personalizar mi pedido?",
+    answer:
+      "¡Por ahora las obleas vienen con nuestras combinaciones favoritas 💕, pero las fresas con crema sí puedes personalizarlas! 🍓 Elige entre toppings clásicos (Oreo, Chinchin, Gomitas, Masmelos) y premium (Queso rallado, Nutella, Hershey's Syrup) y crea tu mezcla perfecta 😋✨",
+  },
+  {
+    question: "¿Hacen envíos a todo Lima?",
+    answer:
+      "Por ahora no 😔💕\n\nSolo enviamos a las zonas cercanas a nuestra tienda para que tu postre llegue fresquito y perfecto.",
+  },
+  {
+    question: "¿Cuánto tiempo toma preparar un pedido?",
+    answer:
+      "¡Siempre frescos y recién hechos! 😋 Nuestros postres se preparan al momento para que disfrutes la mejor experiencia. El tiempo de preparación suele ser de 5 a 15 minutos ✨",
+  },
+  {
+    question: "¿Cuánto demora el delivery?",
+    answer:
+      "Normalmente entre 20 y 40 minutos según el tráfico 🚗💕\n\nIgual siempre te avisamos el tiempo estimado para que sepas cuándo llega tu antojito 😋🍓✨",
+  },
+  {
+    question: "¿Puedo recoger en tienda?",
+    answer:
+      "¡Sí, claro! 😍🍓✨\n\nPuedes pasar por nuestra tienda, pedir para llevar o disfrutarlo mientras paseas por el mall 💕",
+  },
+  {
+    question: "¿Las obleas se ablandan?",
+    answer:
+      "La oblea es crocante, pero con el tiempo absorbe humedad.\n\nLo ideal es disfrutarla apenas te llega para que la vivas como debe ser: crocante por fuera y deli por dentro 😋✨",
+  },
+  {
+    question: "¿Tienen opciones para personas con alergias?",
+    answer:
+      "En O'Creamy usamos ingredientes deliciosos, pero algunos pueden causar alergias. 💕 Te recomendamos revisar nuestra cartilla de alérgenos o escribirnos antes de hacer tu pedido si tienes alguna alergia específica.",
+  },
+  {
+    question: "¿Puedo hacer pedidos para eventos?",
+    answer:
+      '¡Claro que sí! 🎉 Aceptamos pedidos especiales para eventos. Escríbenos con anticipación por <a href="https://wa.link/4rvzrv" target="_blank" rel="noopener noreferrer" class="text-ocreamy-red hover:underline font-semibold">WhatsApp</a> y coordinemos juntos los detalles para endulzar tu celebración 🍓✨',
   },
   {
     question: "¿Cómo puedo hacer un pedido?",
     answer:
-      "Puedes hacer tu pedido directamente por WhatsApp al +51 963 807 150 o visitarnos en nuestro local en Mall Aventura Santa Anita.",
-  },
-  {
-    question: "¿Qué métodos de pago aceptan?",
-    answer:
-      "Aceptamos pago en efectivo al momento de la entrega y también transferencias bancarias (previa coordinación).",
-  },
-  {
-    question: "¿Puedo personalizar mi postre?",
-    answer:
-      "¡Por supuesto! Ofrecemos diversos toppings clásicos y premium para que personalices tu oblea o fresas con crema. Consulta las opciones en nuestra carta.",
-  },
-  {
-    question: "¿Los productos contienen alérgenos?",
-    answer:
-      "Nuestros productos pueden contener o haber estado en contacto con lácteos, frutos secos, gluten y otros alérgenos comunes. Para información específica, consulta nuestra cartilla de alérgenos o contáctanos por WhatsApp.",
-  },
-  {
-    question: "¿Cuál es el tiempo de entrega?",
-    answer:
-      "El tiempo de entrega varía según la zona y las condiciones del tráfico, pero generalmente es entre 30 a 60 minutos. Te confirmaremos un tiempo estimado al realizar tu pedido.",
-  },
-  {
-    question: "¿Puedo cancelar mi pedido?",
-    answer:
-      "Sí, puedes cancelar tu pedido comunicándote con nosotros por WhatsApp con al menos 30 minutos de anticipación antes de la entrega programada.",
+      '¡Es súper fácil! 😋 Puedes visitarnos en nuestra tienda en Mall Aventura Santa Anita o hacer tu pedido por <a href="https://wa.link/4rvzrv" target="_blank" rel="noopener noreferrer" class="text-ocreamy-red hover:underline font-semibold">WhatsApp</a>. Cuéntanos qué antojo tienes y nosotros nos encargamos del resto 🍓💞',
   },
 ];
 
@@ -90,7 +125,10 @@ const PreguntasFrecuentes = () => {
                   }`}
                 >
                   <div className="px-6 pb-6">
-                    <p className="text-ocreamy-brown-light leading-relaxed">{faq.answer}</p>
+                    <p 
+                      className="text-ocreamy-brown-light leading-relaxed whitespace-pre-line"
+                      dangerouslySetInnerHTML={{ __html: faq.answer }}
+                    />
                   </div>
                 </div>
               </div>
