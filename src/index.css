@@ -2,41 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* O'Creamy Design System - All colors MUST be HSL */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* O'Creamy Brand Colors */
+    --ocreamy-red: 5 76% 58%;
+    --ocreamy-brown: 30 35% 38%;
+    
+    /* Secondary Palette */
+    --ocreamy-pink: 4 84% 72%;
+    --ocreamy-brown-light: 30 32% 55%;
+    --ocreamy-beige: 30 35% 72%;
+    --ocreamy-pink-light: 4 90% 86%;
+    --ocreamy-cream-pink: 8 88% 93%;
+    --ocreamy-cream: 30 35% 91%;
+    
+    /* Base Colors */
+    --background: 30 67% 97%;
+    --foreground: 30 28% 32%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 30 28% 32%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 30 28% 32%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 5 76% 58%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 30 35% 38%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 30 35% 91%;
+    --muted-foreground: 30 18% 50%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 4 84% 72%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 30 20% 85%;
+    --input: 30 20% 85%;
+    --ring: 5 76% 58%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -55,43 +66,6 @@ All colors MUST be HSL.
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
 }
 
 @layer base {
@@ -99,7 +73,80 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  body, h1, h2, h3, h4, h5, h6, p, a, li, button, input, textarea, label, span, small {
+    font-family: 'Nunito', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
   body {
     @apply bg-background text-foreground;
+    margin: 0;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  /* Container */
+  .oc-container {
+    @apply max-w-[1120px] mx-auto px-4;
+  }
+
+  /* Section */
+  .oc-section {
+    @apply py-16;
+  }
+
+  .oc-section-title {
+    @apply text-[clamp(1.8rem,2.4vw,2.4rem)] font-bold text-center mb-8;
+    color: hsl(var(--ocreamy-red));
+  }
+
+  .oc-page-title {
+    @apply text-[clamp(2rem,3vw,2.6rem)] font-bold text-center mb-10;
+    color: hsl(var(--ocreamy-red));
+  }
+
+  .oc-subtitle {
+    @apply text-xl font-bold;
+    color: hsl(var(--ocreamy-brown));
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-full border-none font-semibold cursor-pointer no-underline transition-all duration-150 ease-in-out;
+  }
+
+  .btn:hover {
+    @apply -translate-y-0.5;
+    box-shadow: 0 8px 18px rgba(0,0,0,.12);
+  }
+
+  .btn-primary-red {
+    background-color: hsl(var(--ocreamy-red));
+    color: hsl(var(--primary-foreground));
+  }
+
+  .btn-brown {
+    background-color: hsl(var(--ocreamy-brown));
+    color: hsl(var(--secondary-foreground));
+  }
+
+  .btn-wa {
+    background-color: #25D366;
+    color: #ffffff;
+  }
+
+  .btn-outline-light {
+    @apply bg-transparent border border-white text-white;
+  }
+
+  /* Cards */
+  .oc-card {
+    @apply bg-white rounded-2xl overflow-hidden transition-all duration-200;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+  }
+
+  .oc-card:hover {
+    @apply -translate-y-1;
+    box-shadow: 0 8px 24px rgba(0,0,0,.12);
   }
 }
