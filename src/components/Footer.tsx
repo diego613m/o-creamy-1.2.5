@@ -83,14 +83,14 @@ const Footer = () => {
               href="https://www.instagram.com/ocreamyobleasperu/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full flex items-center justify-center transition-transform hover:scale-110"
+              className="w-12 h-12 rounded-full flex items-center justify-center transition-transform hover:scale-110"
               style={{
                 background: 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)'
               }}
               aria-label="Instagram"
             >
               <FaInstagram
-                size={18}
+                size={22}
                 className="text-white"
               />
             </a>
@@ -98,11 +98,11 @@ const Footer = () => {
               href="https://www.tiktok.com/@ocreamyobleasperu"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-black flex items-center justify-center transition-transform hover:scale-110"
+              className="w-12 h-12 rounded-full bg-black flex items-center justify-center transition-transform hover:scale-110"
               aria-label="TikTok"
             >
               <FaTiktok
-                size={18}
+                size={22}
                 className="text-white"
               />
 
@@ -111,11 +111,11 @@ const Footer = () => {
               href="https://wwww.facebook.com/ocreamyobleasperu"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-[#1877F2] flex items-center justify-center transition-transform hover:scale-110"
+              className="w-12 h-12 rounded-full bg-[#1877F2] flex items-center justify-center transition-transform hover:scale-110"
               aria-label="Facebook"
             >
               <FaFacebookF
-                size={18}
+                size={22}
                 className="text-white"
               />
 
@@ -124,11 +124,11 @@ const Footer = () => {
               href="https://wa.link/4rvzrv"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-[#25D366] flex items-center justify-center transition-transform hover:scale-110"
+              className="w-12 h-12 rounded-full bg-[#25D366] flex items-center justify-center transition-transform hover:scale-110"
               aria-label="WhatsApp"
             >
               <FaWhatsapp
-                size={18}
+                size={22}
                 className="text-white"
               />
 
