@@ -11,7 +11,7 @@ const WhatsAppFAB = () => {
       aria-label="Pedir por WhatsApp"
     >
       <FaWhatsapp
-        size={25}
+        size={30}
         className="text-white"
       />
     </a>
