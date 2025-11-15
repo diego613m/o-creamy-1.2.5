@@ -123,7 +123,7 @@ const Index = () => {
                   muted
                   loop
                   playsInline
-                  className="w-full max-w-[260px] rounded-2xl shadow-lg"
+                  className="w-full max-w-[299px] rounded-2xl shadow-lg"
                 />
               </div>
 
@@ -181,7 +181,7 @@ const Index = () => {
           <div className="oc-container">
             <h2 className="oc-section-title">Lo que dicen nuestros clientes</h2>
             <div className="flex justify-center">
-              <div className="relative max-w-[240px] w-full">
+              <div className="relative max-w-[288px] w-full">
                 {testimonials.map((img, idx) => (
                   <div
                     key={idx}
