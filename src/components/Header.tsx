@@ -40,7 +40,7 @@ const Header = () => {
           className={`
             oc-container transition-all duration-300
             ${isScrolled 
-              ? 'bg-white/95 backdrop-blur-md rounded-3xl shadow-xl border border-black/5 px-4 py-1'
+              ? 'bg-white/95 backdrop-blur-md rounded-3xl shadow-xl px-4 py-1'
               : 'bg-background shadow-sm'
             }
           `}
