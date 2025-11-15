@@ -76,7 +76,7 @@ const Menu = () => {
               <button
                 onClick={() => scrollToSection("obleas")}
                 className={`rounded-full font-semibold transition-all
-                  text-[11px] sm:text-sm md:text-base 
+                  text-[12px] sm:text-sm md:text-base 
                   px-4 sm:px-4 md:px-8 
                   py-1.5 md:py-2
                   ${
@@ -92,7 +92,7 @@ const Menu = () => {
               <button
                 onClick={() => scrollToSection("fresas")}
                 className={`rounded-full font-semibold transition-all
-                  text-[11px] sm:text-sm md:text-base 
+                  text-[12px] sm:text-sm md:text-base 
                   px-4 sm:px-4 md:px-8
                   py-1.5 md:py-2  
                   ${
@@ -108,7 +108,7 @@ const Menu = () => {
               <button
                 onClick={() => scrollToSection("toppings")}
                 className={`rounded-full font-semibold transition-all
-                  text-[11px] sm:text-sm md:text-base 
+                  text-[12px] sm:text-sm md:text-base 
                   px-4 sm:px-4 md:px-8 
                   py-1.5 md:py-2  
                   ${
