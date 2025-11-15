@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { FaWhatsapp, FaInstagram, FaClock, FaMapMarkerAlt } from "react-icons/fa";
+import { SiWaze } from "react-icons/si";
 import { Link } from "react-router-dom";
 import { MapPin, Clock, MessageCircle, Instagram, X } from "lucide-react";
 import Header from "@/components/Header";
@@ -32,7 +34,7 @@ const Ubicacion = () => {
                 {/* Info Column */}
                 <div className="space-y-6">
                   <div className="flex items-start gap-3">
-                    <MapPin className="text-ocreamy-red mt-1 flex-shrink-0" size={24} />
+                    <FaMapMarkerAlt className="text-ocreamy-red mt-1 flex-shrink-0" size={24} />
                     <div>
                       <h3 className="font-bold text-lg mb-1 text-ocreamy-brown">Dirección</h3>
                       <p className="text-ocreamy-brown-light">
@@ -42,7 +44,7 @@ const Ubicacion = () => {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <Clock className="text-ocreamy-red mt-1 flex-shrink-0" size={24} />
+                    <FaClock className="text-ocreamy-red mt-1 flex-shrink-0" size={24} />
                     <div>
                       <h3 className="font-bold text-lg mb-1 text-ocreamy-brown">Horario</h3>
                       <p className="text-ocreamy-brown-light">Lunes a Domingo · 12:00 pm – 10:00 pm</p>
@@ -50,7 +52,7 @@ const Ubicacion = () => {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <MessageCircle className="text-ocreamy-red mt-1 flex-shrink-0" size={24} />
+                    <FaWhatsapp className="text-ocreamy-red mt-1 flex-shrink-0" size={24} />
                     <div>
                       <h3 className="font-bold text-lg mb-1 text-ocreamy-brown">WhatsApp</h3>
                       <a
@@ -65,7 +67,7 @@ const Ubicacion = () => {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <Instagram className="text-ocreamy-red mt-1 flex-shrink-0" size={24} />
+                    <FaInstagram className="text-ocreamy-red mt-1 flex-shrink-0" size={24} />
                     <div>
                       <h3 className="font-bold text-lg mb-1 text-ocreamy-brown">Instagram</h3>
                       <a
@@ -144,7 +146,7 @@ const Ubicacion = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors"
               >
-                <MapPin className="text-ocreamy-red" size={24} />
+                <FaMapMarkerAlt className="text-ocreamy-red" size={24} />
                 <span className="font-semibold text-ocreamy-brown">Google Maps</span>
               </a>
               <a
@@ -153,7 +155,7 @@ const Ubicacion = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors"
               >
-                <MapPin className="text-[#33ccff]" size={24} />
+                <SiWaze className="text-[#33ccff]" size={24} />
                 <span className="font-semibold text-ocreamy-brown">Waze</span>
               </a>
             </div>
