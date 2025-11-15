@@ -123,7 +123,7 @@ const Index = () => {
                   muted
                   loop
                   playsInline
-                  className="w-full max-w-[299px] rounded-2xl shadow-lg"
+                  className="w-full max-w-[320px] rounded-2xl shadow-lg"
                 />
               </div>
 
