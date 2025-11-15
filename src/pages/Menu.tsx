@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 const Menu = () => {
   const [activeSection, setActiveSection] = useState("obleas");
+  const [filtersScrolled, setFiltersScrolled] = useState(false);
 
   const scrollWithOffset = (id: string) => {
     const el = document.getElementById(id);
@@ -21,6 +22,16 @@ const Menu = () => {
       behavior: "smooth",
     });
   };
+
+  useEffect(() => {
+    const onScroll = () => {
+      setFiltersScrolled(window.scrollY > 40); // cuando bajes más de 40px, se activa
+    };
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
 
   useEffect(() => {
     const hash = window.location.hash.replace("#", "");
@@ -47,14 +58,20 @@ const Menu = () => {
           <h1 className="oc-page-title">Carta</h1>
 
           {/* Filter Pills - Barra flotante debajo del header */}
-          <div className="sticky top-24 z-40 mb-12 px-4">
+          <div className="sticky top-28 z-40 mb-12 px-4">
             <div
-              className="
+              className={`
                 oc-container
-                bg-white/95 backdrop-blur-md rounded-3xl shadow-xl
+                rounded-3xl
                 flex justify-center gap-2 flex-wrap
                 px-3 py-2 md:px-6 md:py-3
-              "
+                transition-all duration-300
+                ${
+                  filtersScrolled
+                    ? "bg-white/95 backdrop-blur-md shadow-xl"
+                    : "bg-transparent shadow-none"
+                }
+              `}
             >
               <button
                 onClick={() => scrollToSection("obleas")}
@@ -90,6 +107,7 @@ const Menu = () => {
               </button>
             </div>
           </div>
+
 
           {/* Obleas Section */}
           <section id="obleas" className="mb-16">
