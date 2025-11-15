@@ -86,11 +86,11 @@ const Menu = () => {
                   img: "https://res.cloudinary.com/dw1eowmmp/image/upload/v1762626520/OBLEA_2_tndyww.jpg",
                 },
               ].map((product, idx) => (
-                <div key={idx} className="oc-card">
+                <div key={idx} className="oc-card flex flex-col">
                   <div style={{ aspectRatio: "6 / 7" }} className="overflow-hidden">
                     <img src={product.img} alt={product.name} className="w-full h-full object-cover" />
                   </div>
-                  <div className="p-5 flex flex-col">
+                  <div className="p-5 flex flex-col flex-grow">
                     <h4 className="text-xl font-bold mb-2 text-ocreamy-brown">{product.name}</h4>
                     <p className="mb-4 flex-grow text-ocreamy-brown-light">{product.desc}</p>
                     <div className="mt-auto flex items-center">
@@ -124,11 +124,11 @@ const Menu = () => {
                   img: "https://res.cloudinary.com/dw1eowmmp/image/upload/v1762626523/OBLEA_5_giavwn.jpg",
                 },
               ].map((product, idx) => (
-                <div key={idx} className="oc-card">
+                <div key={idx} className="oc-card flex flex-col">
                   <div style={{ aspectRatio: "6 / 7" }} className="overflow-hidden">
                     <img src={product.img} alt={product.name} className="w-full h-full object-cover" />
                   </div>
-                  <div className="p-5 flex flex-col">
+                  <div className="p-5 flex flex-col flex-grow">
                     <h4 className="text-xl font-bold mb-2 text-ocreamy-brown">{product.name}</h4>
                     <p className="mb-4 flex-grow text-ocreamy-brown-light">{product.desc}</p>
                     <div className="mt-auto flex items-center">
@@ -149,7 +149,7 @@ const Menu = () => {
 
             <h3 className="text-xl font-semibold mb-4 text-ocreamy-brown">Medianas (12 oz)</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="oc-card">
+              <div className="oc-card flex flex-col">
                 <div style={{ aspectRatio: "6 / 7" }} className="overflow-hidden">
                   <img
                     src="https://res.cloudinary.com/dw1eowmmp/image/upload/v1762626522/FRESAS_1_nlxsca.jpg"
@@ -157,7 +157,7 @@ const Menu = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-5 flex flex-col">
+                <div className="p-5 flex flex-col flex-grow">
                   <h4 className="text-xl font-bold mb-2 text-ocreamy-brown">Suspiro de Amor</h4>
                   <p className="mb-4 flex-grow text-ocreamy-brown-light">
                     Incluye 2 toppings clásicos a elección
@@ -168,7 +168,7 @@ const Menu = () => {
                 </div>
               </div>
 
-              <div className="oc-card">
+              <div className="oc-card flex flex-col">
                 <div style={{ aspectRatio: "6 / 7" }} className="overflow-hidden">
                   <img
                     src="https://res.cloudinary.com/dw1eowmmp/image/upload/v1762626519/FRESAS_2_r8fy7h.jpg"
@@ -176,7 +176,7 @@ const Menu = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-5 flex flex-col">
+                <div className="p-5 flex flex-col flex-grow">
                   <h4 className="text-xl font-bold mb-2 text-ocreamy-brown">Dulce Pecado</h4>
                   <p className="mb-4 flex-grow text-ocreamy-brown-light">
                     Incluye 2 toppings premium a elección
@@ -190,7 +190,7 @@ const Menu = () => {
 
             <h3 className="text-xl font-semibold mb-4 text-ocreamy-brown">Grandes (16 oz)</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="oc-card">
+              <div className="oc-card flex flex-col">
                 <div style={{ aspectRatio: "6 / 7" }} className="overflow-hidden">
                   <img
                     src="https://res.cloudinary.com/dw1eowmmp/image/upload/v1762626522/FRESAS_1_nlxsca.jpg"
@@ -198,7 +198,7 @@ const Menu = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-5 flex flex-col">
+                <div className="p-5 flex flex-col flex-grow">
                   <h4 className="text-xl font-bold mb-2 text-ocreamy-brown">Suspiro de Amor</h4>
                   <p className="mb-4 flex-grow text-ocreamy-brown-light">
                     Incluye 3 toppings clásicos a elección
@@ -209,7 +209,7 @@ const Menu = () => {
                 </div>
               </div>
 
-              <div className="oc-card">
+              <div className="oc-card flex flex-col">
                 <div style={{ aspectRatio: "6 / 7" }} className="overflow-hidden">
                   <img
                     src="https://res.cloudinary.com/dw1eowmmp/image/upload/v1762626519/FRESAS_2_r8fy7h.jpg"
@@ -217,7 +217,7 @@ const Menu = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-5 flex flex-col">
+                <div className="p-5 flex flex-col flex-grow">
                   <h4 className="text-xl font-bold mb-2 text-ocreamy-brown">Dulce Pecado</h4>
                   <p className="mb-4 flex-grow text-ocreamy-brown-light">
                     Incluye 3 toppings premium a elección
@@ -234,7 +234,7 @@ const Menu = () => {
           <section id="toppings" className="mb-16">
             <h2 className="text-3xl font-bold mb-6 text-ocreamy-brown">Toppings</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="oc-card">
+              <div className="oc-card flex flex-col">
                 <div style={{ aspectRatio: "6 / 7" }} className="overflow-hidden">
                   <img
                     src="https://res.cloudinary.com/dw1eowmmp/image/upload/v1762718004/TOPPINGS_CLASICOS_rdozmh.png"
@@ -242,7 +242,7 @@ const Menu = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-5 flex flex-col">
+                <div className="p-5 flex flex-col flex-grow">
                   <h4 className="text-xl font-bold mb-2 text-ocreamy-brown">Toppings Clásicos</h4>
                   <p className="mb-4 flex-grow text-ocreamy-brown-light">
                     Oreo, Chinchin, Gomitas, Masmelos.
@@ -253,7 +253,7 @@ const Menu = () => {
                 </div>
               </div>
 
-              <div className="oc-card">
+              <div className="oc-card flex flex-col">
                 <div style={{ aspectRatio: "6 / 7" }} className="overflow-hidden">
                   <img
                     src="https://res.cloudinary.com/dw1eowmmp/image/upload/v1762718005/TOPPINGS_PREMIUM_z9my2y.png"
@@ -261,7 +261,7 @@ const Menu = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-5 flex flex-col">
+                <div className="p-5 flex flex-col flex-grow">
                   <h4 className="text-xl font-bold mb-2 text-ocreamy-brown">Toppings Premium</h4>
                   <p className="mb-4 flex-grow text-ocreamy-brown-light">
                     Queso rallado, Nutella, Hershey's Syrup.
