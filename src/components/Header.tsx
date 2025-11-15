@@ -33,7 +33,7 @@ const Header = () => {
         <div className="oc-container">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link to="/" className="relative h-[72px] w-auto">
+            <Link to="/" className="relative h-[76px] w-auto">
               <img
                 src="https://res.cloudinary.com/dw1eowmmp/image/upload/v1762620585/LOGO_IMAGE_pwhxed.png"
                 alt="O'Creamy Logo"
