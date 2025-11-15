@@ -66,7 +66,10 @@ const Header = () => {
                 style={{ backgroundColor: 'hsl(var(--ocreamy-cream-pink))' }}
                 aria-label="TikTok"
               >
-                <FaTiktok size={20} className="text-white" />
+                <FaTiktok 
+                 size={20}
+                 style={{ color: 'hsl(var(--ocreamy-brown))' }}
+                />
               </a>
               <a
                 href="https://www.facebook.com/profile.php?id=61571175464831"
