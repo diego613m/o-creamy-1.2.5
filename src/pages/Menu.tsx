@@ -68,8 +68,10 @@ const Menu = () => {
           {/* Obleas Section */}
           <section id="obleas" className="mb-16">
             <h2 className="text-3xl font-bold mb-2 text-ocreamy-brown">Obleas</h2>
+            
+            {/* Clásicas */}
             <h3 className="text-xl font-semibold mb-6 text-ocreamy-brown-light">Clásicas</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               {[
                 {
                   name: "Solterona",
@@ -83,6 +85,26 @@ const Menu = () => {
                   desc: "Oblea crocante con Manjar y Crema de Leche.",
                   img: "https://res.cloudinary.com/dw1eowmmp/image/upload/v1762626520/OBLEA_2_tndyww.jpg",
                 },
+              ].map((product, idx) => (
+                <div key={idx} className="oc-card">
+                  <div style={{ aspectRatio: "6 / 7" }} className="overflow-hidden">
+                    <img src={product.img} alt={product.name} className="w-full h-full object-cover" />
+                  </div>
+                  <div className="p-5 flex flex-col">
+                    <h4 className="text-xl font-bold mb-2 text-ocreamy-brown">{product.name}</h4>
+                    <p className="mb-4 flex-grow text-ocreamy-brown-light">{product.desc}</p>
+                    <div className="mt-auto flex items-center">
+                      <span className="text-xl font-bold text-ocreamy-red">{product.price}</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Especiales */}
+            <h3 className="text-xl font-semibold mb-6 text-ocreamy-brown-light">Especiales</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
                 {
                   name: "Encanto",
                   price: "S/ 17.00",
@@ -145,10 +167,7 @@ const Menu = () => {
                   </div>
                 </div>
               </div>
-            </div>
 
-            <h3 className="text-xl font-semibold mb-4 text-ocreamy-brown">Grandes (16 oz)</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="oc-card">
                 <div style={{ aspectRatio: "6 / 7" }} className="overflow-hidden">
                   <img
@@ -160,10 +179,51 @@ const Menu = () => {
                 <div className="p-5 flex flex-col">
                   <h4 className="text-xl font-bold mb-2 text-ocreamy-brown">Dulce Pecado</h4>
                   <p className="mb-4 flex-grow text-ocreamy-brown-light">
+                    Incluye 2 toppings premium a elección
+                  </p>
+                  <div className="mt-auto flex items-center">
+                    <span className="text-xl font-bold text-ocreamy-red">S/ 16.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h3 className="text-xl font-semibold mb-4 text-ocreamy-brown">Grandes (16 oz)</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="oc-card">
+                <div style={{ aspectRatio: "6 / 7" }} className="overflow-hidden">
+                  <img
+                    src="https://res.cloudinary.com/dw1eowmmp/image/upload/v1762626522/FRESAS_1_nlxsca.jpg"
+                    alt="Suspiro de Amor"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-5 flex flex-col">
+                  <h4 className="text-xl font-bold mb-2 text-ocreamy-brown">Suspiro de Amor</h4>
+                  <p className="mb-4 flex-grow text-ocreamy-brown-light">
                     Incluye 3 toppings clásicos a elección
                   </p>
                   <div className="mt-auto flex items-center">
                     <span className="text-xl font-bold text-ocreamy-red">S/ 17.00</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="oc-card">
+                <div style={{ aspectRatio: "6 / 7" }} className="overflow-hidden">
+                  <img
+                    src="https://res.cloudinary.com/dw1eowmmp/image/upload/v1762626519/FRESAS_2_r8fy7h.jpg"
+                    alt="Dulce Pecado"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-5 flex flex-col">
+                  <h4 className="text-xl font-bold mb-2 text-ocreamy-brown">Dulce Pecado</h4>
+                  <p className="mb-4 flex-grow text-ocreamy-brown-light">
+                    Incluye 3 toppings premium a elección
+                  </p>
+                  <div className="mt-auto flex items-center">
+                    <span className="text-xl font-bold text-ocreamy-red">S/ 19.00</span>
                   </div>
                 </div>
               </div>
@@ -214,21 +274,32 @@ const Menu = () => {
             </div>
           </section>
 
-          {/* CTA */}
-          <section className="text-center py-12">
-            <p className="text-xl mb-6 text-ocreamy-brown font-semibold">
+        </div>
+
+        {/* CTA Section */}
+        <section className="oc-section bg-ocreamy-red text-white">
+          <div className="oc-container text-center">
+            <h2 className="text-[clamp(1.8rem,2.4vw,2.4rem)] font-bold mb-4">
               ¿Listo para pedir tus favoritos?
+            </h2>
+            <p className="text-lg mb-6">
+              Haz tu pedido ahora por WhatsApp
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="https://wa.link/4rvzrv" target="_blank" rel="noopener noreferrer" className="btn btn-wa">
+              <a
+                href="https://wa.link/4rvzrv"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-wa"
+              >
                 Pedir por WhatsApp
               </a>
               <Link to="/" className="btn btn-brown">
                 Volver al Home
               </Link>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </main>
 
       <Footer />

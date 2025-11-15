@@ -58,15 +58,15 @@ const Index = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-6 flex flex-col items-center text-center">
-                  <h3 className="oc-subtitle mb-2">Obleas</h3>
-                  <p className="mb-4" style={{ color: 'hsl(var(--muted-foreground))' }}>
-                    Crocantes y deliciosas, con los mejores ingredientes
-                  </p>
-                  <Link to="/menu#obleas" className="btn btn-primary-red">
-                    Ver más
-                  </Link>
-                </div>
+              <div className="p-6 flex flex-col items-center text-center">
+                <h3 className="oc-subtitle mb-2">Obleas</h3>
+                <p className="mb-4 flex-grow" style={{ color: 'hsl(var(--muted-foreground))' }}>
+                  Crocantes y deliciosas, con los mejores ingredientes
+                </p>
+                <Link to="/menu#obleas" className="btn btn-primary-red mt-auto">
+                  Ver más
+                </Link>
+              </div>
               </div>
 
               <div className="oc-card">
@@ -77,15 +77,15 @@ const Index = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-6 flex flex-col items-center text-center">
-                  <h3 className="oc-subtitle mb-2">Fresas con crema</h3>
-                  <p className="mb-4" style={{ color: 'hsl(var(--muted-foreground))' }}>
-                    Frescas y cremosas, el postre perfecto
-                  </p>
-                  <Link to="/menu#fresas" className="btn btn-primary-red">
-                    Ver más
-                  </Link>
-                </div>
+              <div className="p-6 flex flex-col items-center text-center">
+                <h3 className="oc-subtitle mb-2">Fresas con crema</h3>
+                <p className="mb-4 flex-grow" style={{ color: 'hsl(var(--muted-foreground))' }}>
+                  Frescas y cremosas, el postre perfecto
+                </p>
+                <Link to="/menu#fresas" className="btn btn-primary-red mt-auto">
+                  Ver más
+                </Link>
+              </div>
               </div>
 
               <div className="oc-card">
@@ -96,22 +96,22 @@ const Index = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-6 flex flex-col items-center text-center">
-                  <h3 className="oc-subtitle mb-2">Toppings</h3>
-                  <p className="mb-4" style={{ color: 'hsl(var(--muted-foreground))' }}>
-                    Personaliza tu postre con nuestros toppings
-                  </p>
-                  <Link to="/menu#toppings" className="btn btn-primary-red">
-                    Ver más
-                  </Link>
-                </div>
+              <div className="p-6 flex flex-col items-center text-center">
+                <h3 className="oc-subtitle mb-2">Toppings</h3>
+                <p className="mb-4 flex-grow" style={{ color: 'hsl(var(--muted-foreground))' }}>
+                  Personaliza tu postre con nuestros toppings
+                </p>
+                <Link to="/menu#toppings" className="btn btn-primary-red mt-auto">
+                  Ver más
+                </Link>
+              </div>
               </div>
             </div>
           </div>
         </section>
 
         {/* ¡Mira lo que hacemos! */}
-        <section className="oc-section" style={{ backgroundColor: 'hsl(var(--ocreamy-pink))' }}>
+        <section className="oc-section" style={{ backgroundColor: '#EDE8DF' }}>
           <div className="oc-container">
             <h2 className="oc-section-title">¡Mira lo que hacemos!</h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -123,7 +123,7 @@ const Index = () => {
                   muted
                   loop
                   playsInline
-                  className="w-full max-w-md rounded-2xl shadow-lg"
+                  className="w-full max-w-[260px] rounded-2xl shadow-lg"
                 />
               </div>
 
@@ -181,7 +181,7 @@ const Index = () => {
           <div className="oc-container">
             <h2 className="oc-section-title">Lo que dicen nuestros clientes</h2>
             <div className="flex justify-center">
-              <div className="relative max-w-md w-full">
+              <div className="relative max-w-[240px] w-full">
                 {testimonials.map((img, idx) => (
                   <div
                     key={idx}
@@ -225,7 +225,7 @@ const Index = () => {
             <div className="flex flex-wrap justify-center gap-4">
               <Link 
                 to="/menu" 
-                className="btn inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-semibold transition-all hover:scale-105 h-10 px-4 py-2"
+                className="btn inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-semibold transition-all hover:scale-105 h-11 px-4 py-2"
                 style={{ backgroundColor: '#836140', color: '#ffffff' }}
               >
                 Ver Carta
