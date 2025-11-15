@@ -83,7 +83,7 @@ const Footer = () => {
               href="https://www.instagram.com/ocreamyobleasperu/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-17 h-17 rounded-full flex items-center justify-center transition-transform hover:scale-110"
+              className="w-16 h-16 rounded-full flex items-center justify-center transition-transform hover:scale-110"
               style={{
                 background: 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)'
               }}
@@ -98,7 +98,7 @@ const Footer = () => {
               href="https://www.tiktok.com/@ocreamyobleasperu"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-17 h-17 rounded-full bg-black flex items-center justify-center transition-transform hover:scale-110"
+              className="w-16 h-16 rounded-full bg-black flex items-center justify-center transition-transform hover:scale-110"
               aria-label="TikTok"
             >
               <FaTiktok
@@ -111,7 +111,7 @@ const Footer = () => {
               href="https://wwww.facebook.com/ocreamyobleasperu"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-17 h-17 rounded-full bg-[#1877F2] flex items-center justify-center transition-transform hover:scale-110"
+              className="w-16 h-16 rounded-full bg-[#1877F2] flex items-center justify-center transition-transform hover:scale-110"
               aria-label="Facebook"
             >
               <FaFacebookF
@@ -124,7 +124,7 @@ const Footer = () => {
               href="https://wa.link/4rvzrv"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-17 h-17 rounded-full bg-[#25D366] flex items-center justify-center transition-transform hover:scale-110"
+              className="w-16 h-16 rounded-full bg-[#25D366] flex items-center justify-center transition-transform hover:scale-110"
               aria-label="WhatsApp"
             >
               <FaWhatsapp

@@ -98,7 +98,7 @@ const Header = () => {
               {/* Ver Carta Button */}
               <Link
                 to="/menu"
-                className="btn btn-primary-red ml-2 h-10 px-4 flex items-center justify-center"
+                className="btn btn-primary-red ml-2 h-12 px-4 flex items-center justify-center"
               >
                 Ver Carta
               </Link>
@@ -117,11 +117,11 @@ const Header = () => {
             {/* Mobile Hamburger */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden w-10 h-10 rounded-full flex items-center justify-center"
+              className="md:hidden w-12 h-12 rounded-full flex items-center justify-center"
               style={{ backgroundColor: 'hsl(var(--ocreamy-cream-pink))' }}
               aria-label="Menú"
             >
-              <Menu size={20} style={{ color: 'hsl(var(--ocreamy-brown))' }} />
+              <Menu size={23} style={{ color: 'hsl(var(--ocreamy-brown))' }} />
             </button>
           </div>
         </div>
