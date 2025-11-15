@@ -7,19 +7,34 @@ import { Link } from "react-router-dom";
 const Menu = () => {
   const [activeSection, setActiveSection] = useState("obleas");
 
+  const scrollWithOffset = (id: string) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    // Ajusta 120 según te guste más arriba o más abajo
+    const offset = 120;
+
+    const y = el.getBoundingClientRect().top + window.scrollY - offset;
+
+    window.scrollTo({
+      top: y,
+      behavior: "smooth",
+    });
+  };
+
   useEffect(() => {
     const hash = window.location.hash.replace("#", "");
     if (hash) {
       setActiveSection(hash);
       setTimeout(() => {
-        document.getElementById(hash)?.scrollIntoView({ behavior: "smooth" });
+        scrollWithOffset(hash);
       }, 100);
     }
   }, []);
 
   const scrollToSection = (sectionId: string) => {
     setActiveSection(sectionId);
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    scrollWithOffset(sectionId);
   };
 
   return (
