@@ -41,7 +41,7 @@ const Header = () => {
             oc-container transition-all duration-300
             ${isScrolled 
               ? 'bg-white/95 backdrop-blur-md rounded-3xl shadow-xl px-4 py-1'
-              : 'bg-background shadow-sm'
+              : 'bg-transparent'
             }
           `}
         >
