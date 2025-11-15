@@ -109,7 +109,7 @@ const Ubicacion = () => {
                   />
                   <button
                     onClick={handleMapButtonClick}
-                    className="btn btn-primary-red w-[80%] sm:w-1/3 mx-auto mt-4 block"
+                    className="btn btn-primary-red w-[65%] sm:w-1/3 mx-auto mt-4 block"
                   >
                     Cómo llegar
                   </button>
