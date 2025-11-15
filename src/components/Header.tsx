@@ -1,3 +1,4 @@
+import { FaFacebookF, FaTiktok, FaWhatsapp } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Instagram, Music2, Facebook, MessageCircle, Menu, X } from "lucide-react";
@@ -65,7 +66,7 @@ const Header = () => {
                 style={{ backgroundColor: 'hsl(var(--ocreamy-cream-pink))' }}
                 aria-label="TikTok"
               >
-                <Music2 size={20} style={{ color: 'hsl(var(--ocreamy-brown))' }} />
+                <FaTiktok size={20} className="text-white" />
               </a>
               <a
                 href="https://www.facebook.com/profile.php?id=61571175464831"
@@ -75,7 +76,7 @@ const Header = () => {
                 style={{ backgroundColor: 'hsl(var(--ocreamy-cream-pink))' }}
                 aria-label="Facebook"
               >
-                <Facebook size={20} style={{ color: 'hsl(var(--ocreamy-brown))' }} />
+                <FaFacebookF size={20} style={{ color: 'hsl(var(--ocreamy-brown))' }} />
               </a>
               <a
                 href="https://wa.link/4rvzrv"
@@ -84,7 +85,7 @@ const Header = () => {
                 className="w-10 h-10 rounded-full bg-[#25D366] flex items-center justify-center transition-all hover:scale-110"
                 aria-label="WhatsApp"
               >
-                <MessageCircle size={20} className="text-white fill-white" />
+                <FaWhatsapp size={20} className="text-white" />
               </a>
 
               {/* Ver Carta Button */}
