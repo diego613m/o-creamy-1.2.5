@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaWhatsapp, FaInstagram, FaClock, FaMapMarkerAlt } from "react-icons/fa";
 import { SiWaze } from "react-icons/si";
+import { SiGooglemaps } from "react-icons/si";
 import { Link } from "react-router-dom";
 import { MapPin, Clock, MessageCircle, Instagram, X } from "lucide-react";
 import Header from "@/components/Header";
@@ -34,7 +35,11 @@ const Ubicacion = () => {
                 {/* Info Column */}
                 <div className="space-y-6">
                   <div className="flex items-start gap-3">
-                    <FaMapMarkerAlt className="text-ocreamy-red mt-1 flex-shrink-0" size={24} />
+                    <FaMapMarkerAlt
+                      className="mt-1 flex-shrink-0"
+                      size={26}
+                      style={{ color: '#836140' }}
+                    />
                     <div>
                       <h3 className="font-bold text-lg mb-1 text-ocreamy-brown">Dirección</h3>
                       <p className="text-ocreamy-brown-light">
@@ -44,7 +49,11 @@ const Ubicacion = () => {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <FaClock className="text-ocreamy-red mt-1 flex-shrink-0" size={24} />
+                    <FaClock 
+                      className="mt-1 flex-shrink-0"
+                      size={26}
+                      style={{ color: '#836140' }}
+                    />
                     <div>
                       <h3 className="font-bold text-lg mb-1 text-ocreamy-brown">Horario</h3>
                       <p className="text-ocreamy-brown-light">Lunes a Domingo · 12:00 pm – 10:00 pm</p>
@@ -52,7 +61,11 @@ const Ubicacion = () => {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <FaWhatsapp className="text-ocreamy-red mt-1 flex-shrink-0" size={24} />
+                    <FaWhatsapp
+                      className="mt-1 flex-shrink-0"
+                      size={28}
+                      style={{ color: '#25D366' }}
+                    />
                     <div>
                       <h3 className="font-bold text-lg mb-1 text-ocreamy-brown">WhatsApp</h3>
                       <a
@@ -67,7 +80,11 @@ const Ubicacion = () => {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <FaInstagram className="text-ocreamy-red mt-1 flex-shrink-0" size={24} />
+                    <FaInstagram
+                      className="mt-1 flex-shrink-0"
+                      size={28}
+                      style={{ color: '#E4405F' }}
+                    />
                     <div>
                       <h3 className="font-bold text-lg mb-1 text-ocreamy-brown">Instagram</h3>
                       <a
@@ -146,7 +163,11 @@ const Ubicacion = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors"
               >
-                <FaMapMarkerAlt className="text-ocreamy-red" size={24} />
+                  <SiGooglemaps
+                    className="mt-1 flex-shrink-0"
+                    size={28}
+                    style={{ color: '#4285F4' }} // Azul oficial Google Maps
+                  />
                 <span className="font-semibold text-ocreamy-brown">Google Maps</span>
               </a>
               <a
@@ -155,7 +176,11 @@ const Ubicacion = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors"
               >
-                <SiWaze className="text-[#33ccff]" size={24} />
+                <SiWaze 
+                  className="flex-shrink-0" 
+                  size={28} 
+                  style={{ color: '#33CCFF' }}
+                />
                 <span className="font-semibold text-ocreamy-brown">Waze</span>
               </a>
             </div>
