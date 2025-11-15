@@ -34,6 +34,7 @@ const Header = () => {
           fixed left-0 right-0 z-50
           transition-all duration-300
           ${isScrolled ? 'top-3' : 'top-0'}
+          bg-transparent shadow-none border-none
         `}
       >
         <div
@@ -41,7 +42,7 @@ const Header = () => {
             oc-container transition-all duration-300
             ${isScrolled 
               ? 'bg-white/95 backdrop-blur-md rounded-3xl shadow-xl px-4 py-1'
-              : 'bg-transparent'
+              : 'bg-transparent shadow-none border-none'
             }
           `}
         >
