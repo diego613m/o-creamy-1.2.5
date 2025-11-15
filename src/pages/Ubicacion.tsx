@@ -90,7 +90,7 @@ const Ubicacion = () => {
                   />
                   <button
                     onClick={handleMapButtonClick}
-                    className="btn btn-primary-red w-1/4 mx-auto mt-4 block"
+                    className="btn btn-primary-red w-1/3 mx-auto mt-4 block"
                   >
                     Cómo llegar
                   </button>
@@ -113,7 +113,7 @@ const Ubicacion = () => {
                 href="https://wa.link/4rvzrv"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-wa"
+                className="btn btn-wa h-11 px-4 py-2 flex items-center justify-center"
               >
                 Pedir por WhatsApp
               </a>

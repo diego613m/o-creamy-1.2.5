@@ -53,12 +53,12 @@ const Header = () => {
                 href="https://www.instagram.com/ocreamyobleasperu/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-110"
+                className="w-12 h-12 rounded-full flex items-center justify-center transition-all hover:scale-110"
                 style={{ backgroundColor: 'hsl(var(--ocreamy-cream-pink))' }}
                 aria-label="Instagram"
               >
                 <FaInstagram
-                 size={20}
+                 size={26}
                  style={{ color: 'hsl(var(--ocreamy-brown))' }}
                 />
               </a>
@@ -66,12 +66,12 @@ const Header = () => {
                 href="https://www.tiktok.com/@ocreamyobleasperu"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-110"
+                className="w-12 h-12 rounded-full flex items-center justify-center transition-all hover:scale-110"
                 style={{ backgroundColor: 'hsl(var(--ocreamy-cream-pink))' }}
                 aria-label="TikTok"
               >
                 <FaTiktok 
-                 size={20}
+                 size={23}
                  style={{ color: 'hsl(var(--ocreamy-brown))' }}
                 />
               </a>
@@ -79,35 +79,38 @@ const Header = () => {
                 href="https://wwww.facebook.com/ocreamyobleasperu"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-110"
+                className="w-12 h-12 rounded-full flex items-center justify-center transition-all hover:scale-110"
                 style={{ backgroundColor: 'hsl(var(--ocreamy-cream-pink))' }}
                 aria-label="Facebook"
               >
-                <FaFacebookF size={20} style={{ color: 'hsl(var(--ocreamy-brown))' }} />
+                <FaFacebookF size={23} style={{ color: 'hsl(var(--ocreamy-brown))' }} />
               </a>
               <a
                 href="https://wa.link/4rvzrv"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-[#25D366] flex items-center justify-center transition-all hover:scale-110"
+                className="w-12 h-12 rounded-full bg-[#25D366] flex items-center justify-center transition-all hover:scale-110"
                 aria-label="WhatsApp"
               >
-                <FaWhatsapp size={20} className="text-white" />
+                <FaWhatsapp size={27} className="text-white" />
               </a>
 
               {/* Ver Carta Button */}
-              <Link to="/menu" className="btn btn-primary-red ml-2">
+              <Link
+                to="/menu"
+                className="btn btn-primary-red ml-2 h-10 px-4 flex items-center justify-center"
+              >
                 Ver Carta
               </Link>
 
               {/* Hamburger Button */}
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-110"
+                className="w-12 h-12 rounded-full flex items-center justify-center transition-all hover:scale-110"
                 style={{ backgroundColor: 'hsl(var(--ocreamy-cream-pink))' }}
                 aria-label="Menú"
               >
-                <Menu size={20} style={{ color: 'hsl(var(--ocreamy-brown))' }} />
+                <Menu size={23} style={{ color: 'hsl(var(--ocreamy-brown))' }} />
               </button>
             </div>
 

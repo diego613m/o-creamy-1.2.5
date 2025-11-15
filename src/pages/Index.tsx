@@ -181,7 +181,7 @@ const Index = () => {
           <div className="oc-container">
             <h2 className="oc-section-title">Lo que dicen nuestros clientes</h2>
             <div className="flex justify-center">
-              <div className="relative max-w-[320px] w-full">
+              <div className="relative max-w-[400px] w-full">
                 {testimonials.map((img, idx) => (
                   <div
                     key={idx}
@@ -234,7 +234,7 @@ const Index = () => {
                 href="https://wa.link/4rvzrv"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-wa"
+                className="btn btn-wa h-11 px-4 py-2 flex items-center justify-center"
               >
                 Pedir por WhatsApp
               </a>

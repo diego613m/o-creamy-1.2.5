@@ -290,7 +290,7 @@ const Menu = () => {
                 href="https://wa.link/4rvzrv"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-wa"
+                className="btn btn-wa h-11 px-4 py-2 flex items-center justify-center"
               >
                 Pedir por WhatsApp
               </a>
