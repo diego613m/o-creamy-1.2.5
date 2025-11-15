@@ -75,13 +75,10 @@ const Menu = () => {
             >
               <button
                 onClick={() => scrollToSection("obleas")}
-                className={`
-                  px-4 py-1.5 
-                  md:px-6 md:py-2 
-                  rounded-full font-semibold transition-all 
-                  text-xs md:text-sm 
-                  max-w-[140px] w-full 
-                  text-center 
+                className={`rounded-full font-semibold transition-all
+                  text-[11px] sm:text-sm md:text-base 
+                  px-3 sm:px-4 md:px-8 
+                  py-1.5 md:py-2
                   ${
                     activeSection === "obleas"
                       ? "bg-ocreamy-red text-white"
@@ -94,13 +91,10 @@ const Menu = () => {
 
               <button
                 onClick={() => scrollToSection("fresas")}
-                className={`
-                  px-4 py-1.5 
-                  md:px-6 md:py-2
-                  rounded-full font-semibold transition-all 
-                  text-xs md:text-sm 
-                  max-w-[140px] w-full 
-                  text-center 
+                className={`rounded-full font-semibold transition-all
+                  text-[11px] sm:text-sm md:text-base 
+                  px-3 sm:px-4 md:px-8
+                  py-1.5 md:py-2  
                   ${
                     activeSection === "fresas"
                       ? "bg-ocreamy-red text-white"
@@ -113,13 +107,10 @@ const Menu = () => {
 
               <button
                 onClick={() => scrollToSection("toppings")}
-                className={`
-                  px-4 py-1.5 
-                  md:px-6 md:py-2 
-                  rounded-full font-semibold transition-all 
-                  text-xs md:text-sm 
-                  max-w-[140px] w-full 
-                  text-center 
+                className={`rounded-full font-semibold transition-all
+                  text-[11px] sm:text-sm md:text-base 
+                  px-3 sm:px-4 md:px-8 
+                  py-1.5 md:py-2  
                   ${
                     activeSection === "toppings"
                       ? "bg-ocreamy-red text-white"
