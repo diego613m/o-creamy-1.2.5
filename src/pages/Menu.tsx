@@ -13,7 +13,7 @@ const Menu = () => {
     if (!el) return;
 
     // Ajusta 120 según te guste más arriba o más abajo
-    const offset = 160;
+    const offset = 180;
 
     const y = el.getBoundingClientRect().top + window.scrollY - offset;
 
