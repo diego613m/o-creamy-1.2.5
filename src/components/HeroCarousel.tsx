@@ -3,10 +3,10 @@ import { MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const slides = [
-  "https://res.cloudinary.com/dw1eowmmp/image/upload/v1762620255/HERO_IMG_1_jbgysk.png",
-  "https://res.cloudinary.com/dw1eowmmp/image/upload/v1762620255/HERO_IMG_2_f5bfrn.png",
-  "https://res.cloudinary.com/dw1eowmmp/image/upload/v1762620255/HERO_IMG_3_kwrmvs.png",
-  "https://res.cloudinary.com/dw1eowmmp/image/upload/v1762619530/HERO_IMG_4_xzd66l.png",
+  "https://res.cloudinary.com/dw1eowmmp/image/upload/v1762905960/HERO_IMG_1_zie8b6.png",
+  "https://res.cloudinary.com/dw1eowmmp/image/upload/v1762905960/HERO_IMG_2_jzskzv.png",
+  "https://res.cloudinary.com/dw1eowmmp/image/upload/v1762905962/HERO_IMG_3_kx530k.png",
+  "https://res.cloudinary.com/dw1eowmmp/image/upload/v1762905970/HERO_IMG_4_dtt9b6.png",
 ];
 
 const HeroCarousel = () => {
