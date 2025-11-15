@@ -188,7 +188,8 @@ const Menu = () => {
           <section id="fresas" className="mb-16">
             <h2 className="text-3xl font-bold mb-2 text-ocreamy-red">Fresas con Crema</h2>
             <p className="mb-6 text-ocreamy-brown-light">
-              Todos nuestros vasos incluyen: Fresas, Crema de Leche, Manjar y Masmelos
+              Todos nuestros vasos incluyen: Leche Condensada y/o Manjar, más 2 Toppings Clásicos. 
+              Toppings Premium tienen un costo adicional.
             </p>
 
             <h3 className="text-xl font-semibold mb-4 text-ocreamy-brown">Medianas (12 oz)</h3>
@@ -204,10 +205,10 @@ const Menu = () => {
                 <div className="p-5 flex flex-col flex-grow">
                   <h4 className="text-xl font-bold mb-2 text-ocreamy-brown">Suspiro de Amor</h4>
                   <p className="mb-4 flex-grow text-ocreamy-brown-light">
-                    Incluye 2 toppings clásicos a elección
+                    Fresas con Crema de Leche.
                   </p>
                   <div className="mt-auto flex items-center">
-                    <span className="text-xl font-bold text-ocreamy-red">S/ 14.00</span>
+                    <span className="text-xl font-bold text-ocreamy-red">S/ 20.00</span>
                   </div>
                 </div>
               </div>
@@ -223,10 +224,10 @@ const Menu = () => {
                 <div className="p-5 flex flex-col flex-grow">
                   <h4 className="text-xl font-bold mb-2 text-ocreamy-brown">Dulce Pecado</h4>
                   <p className="mb-4 flex-grow text-ocreamy-brown-light">
-                    Incluye 2 toppings premium a elección
+                    Fresas y Duraznos con Crema de Leche.
                   </p>
                   <div className="mt-auto flex items-center">
-                    <span className="text-xl font-bold text-ocreamy-red">S/ 16.00</span>
+                    <span className="text-xl font-bold text-ocreamy-red">S/ 21.50</span>
                   </div>
                 </div>
               </div>
@@ -245,10 +246,10 @@ const Menu = () => {
                 <div className="p-5 flex flex-col flex-grow">
                   <h4 className="text-xl font-bold mb-2 text-ocreamy-brown">Suspiro de Amor</h4>
                   <p className="mb-4 flex-grow text-ocreamy-brown-light">
-                    Incluye 3 toppings clásicos a elección
+                    Fresas con Crema de Leche.
                   </p>
                   <div className="mt-auto flex items-center">
-                    <span className="text-xl font-bold text-ocreamy-red">S/ 17.00</span>
+                    <span className="text-xl font-bold text-ocreamy-red">S/ 22.50</span>
                   </div>
                 </div>
               </div>
@@ -264,10 +265,10 @@ const Menu = () => {
                 <div className="p-5 flex flex-col flex-grow">
                   <h4 className="text-xl font-bold mb-2 text-ocreamy-brown">Dulce Pecado</h4>
                   <p className="mb-4 flex-grow text-ocreamy-brown-light">
-                    Incluye 3 toppings premium a elección
+                    Fresas y Duraznos con Crema de Leche.
                   </p>
                   <div className="mt-auto flex items-center">
-                    <span className="text-xl font-bold text-ocreamy-red">S/ 19.00</span>
+                    <span className="text-xl font-bold text-ocreamy-red">S/ 24.00</span>
                   </div>
                 </div>
               </div>
