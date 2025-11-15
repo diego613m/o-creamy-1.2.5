@@ -1,4 +1,5 @@
 import { FaFacebookF, FaTiktok, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Instagram, Music2, Facebook, MessageCircle, Menu, X } from "lucide-react";
@@ -56,7 +57,10 @@ const Header = () => {
                 style={{ backgroundColor: 'hsl(var(--ocreamy-cream-pink))' }}
                 aria-label="Instagram"
               >
-                <Instagram size={20} style={{ color: 'hsl(var(--ocreamy-brown))' }} />
+                <FaInstagram
+                 size={20}
+                 style={{ color: 'hsl(var(--ocreamy-brown))' }}
+                />
               </a>
               <a
                 href="https://www.tiktok.com/@ocreamyobleasperu"
