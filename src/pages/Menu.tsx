@@ -75,33 +75,57 @@ const Menu = () => {
             >
               <button
                 onClick={() => scrollToSection("obleas")}
-                className={`px-6 py-2 rounded-full font-semibold transition-all text-sm md:text-base ${
-                  activeSection === "obleas"
-                    ? "bg-ocreamy-red text-white"
-                    : "bg-white text-ocreamy-brown border border-border"
-                }`}
+                className={`
+                  px-4 py-1.5 
+                  md:px-6 md:py-2 
+                  rounded-full font-semibold transition-all 
+                  text-xs md:text-sm 
+                  max-w-[140px] w-full 
+                  text-center 
+                  ${
+                    activeSection === "obleas"
+                      ? "bg-ocreamy-red text-white"
+                      : "bg-white text-ocreamy-brown border border-border"
+                  }
+                `}
               >
                 Obleas
               </button>
 
               <button
                 onClick={() => scrollToSection("fresas")}
-                className={`px-6 py-2 rounded-full font-semibold transition-all text-sm md:text-base ${
-                  activeSection === "fresas"
-                    ? "bg-ocreamy-red text-white"
-                    : "bg-white text-ocreamy-brown border border-border"
-                }`}
+                className={`
+                  px-4 py-1.5 
+                  md:px-6 md:py-2
+                  rounded-full font-semibold transition-all 
+                  text-xs md:text-sm 
+                  max-w-[140px] w-full 
+                  text-center 
+                  ${
+                    activeSection === "fresas"
+                      ? "bg-ocreamy-red text-white"
+                      : "bg-white text-ocreamy-brown border border-border"
+                  }
+                `}
               >
                 Fresas con Crema
               </button>
 
               <button
                 onClick={() => scrollToSection("toppings")}
-                className={`px-6 py-2 rounded-full font-semibold transition-all text-sm md:text-base ${
-                  activeSection === "toppings"
-                    ? "bg-ocreamy-red text-white"
-                    : "bg-white text-ocreamy-brown border border-border"
-                }`}
+                className={`
+                  px-4 py-1.5 
+                  md:px-6 md:py-2 
+                  rounded-full font-semibold transition-all 
+                  text-xs md:text-sm 
+                  max-w-[140px] w-full 
+                  text-center 
+                  ${
+                    activeSection === "toppings"
+                      ? "bg-ocreamy-red text-white"
+                      : "bg-white text-ocreamy-brown border border-border"
+                  }
+                `}
               >
                 Toppings
               </button>
