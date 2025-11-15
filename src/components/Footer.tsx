@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { FaFacebookF, FaTiktok, FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { Instagram, Music2, Facebook, MessageCircle } from "lucide-react";
 
 const Footer = () => {
@@ -88,7 +89,10 @@ const Footer = () => {
               }}
               aria-label="Instagram"
             >
-              <Instagram size={20} className="text-white" />
+              <FaInstagram
+                size={18}
+                className="text-white"
+              />
             </a>
             <a
               href="https://www.tiktok.com/@ocreamyobleasperu"
@@ -97,16 +101,24 @@ const Footer = () => {
               className="w-10 h-10 rounded-full bg-black flex items-center justify-center transition-transform hover:scale-110"
               aria-label="TikTok"
             >
-              <Music2 size={20} className="text-white" />
+              <FaTiktok
+                size={18}
+                className="text-white"
+              />
+
             </a>
             <a
-              href="https://www.facebook.com/profile.php?id=61571175464831"
+              href="https://wwww.facebook.com/ocreamyobleasperu"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-[#1877F2] flex items-center justify-center transition-transform hover:scale-110"
               aria-label="Facebook"
             >
-              <Facebook size={20} className="text-white" />
+              <FaFacebookF
+                size={18}
+                className="text-white"
+              />
+
             </a>
             <a
               href="https://wa.link/4rvzrv"
@@ -115,7 +127,11 @@ const Footer = () => {
               className="w-10 h-10 rounded-full bg-[#25D366] flex items-center justify-center transition-transform hover:scale-110"
               aria-label="WhatsApp"
             >
-              <MessageCircle size={20} className="text-white" />
+              <FaWhatsapp
+                size={18}
+                className="text-white"
+              />
+
             </a>
           </div>
 
