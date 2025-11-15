@@ -91,7 +91,7 @@ const Index = () => {
               <div className="oc-card flex flex-col">
                 <div style={{ aspectRatio: "6 / 7" }} className="overflow-hidden">
                   <img
-                    src="https://res.cloudinary.com/dw1eowmmp/image/upload/v1762620992/FAV_OBLEA_IMG_w2uz6j.jpg"
+                    src="https://res.cloudinary.com/dw1eowmmp/image/upload/v1762905189/FAV_TOPPINGS_IMG_luaxtt.png"
                     alt="Toppings"
                     className="w-full h-full object-cover"
                   />
