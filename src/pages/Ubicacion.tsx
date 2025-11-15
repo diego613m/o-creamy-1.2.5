@@ -38,7 +38,7 @@ const Ubicacion = () => {
                     <FaMapMarkerAlt
                       className="mt-1 flex-shrink-0"
                       size={26}
-                      style={{ color: '#836140' }}
+                      style={{ color: '#ef3e36' }}
                     />
                     <div>
                       <h3 className="font-bold text-lg mb-1 text-ocreamy-brown">Dirección</h3>
@@ -109,7 +109,7 @@ const Ubicacion = () => {
                   />
                   <button
                     onClick={handleMapButtonClick}
-                    className="btn btn-primary-red w-1/3 mx-auto mt-4 block"
+                    className="btn btn-primary-red w-[80%] sm:w-1/3 mx-auto mt-4 block"
                   >
                     Cómo llegar
                   </button>
@@ -166,7 +166,7 @@ const Ubicacion = () => {
                   <SiGooglemaps
                     className="mt-1 flex-shrink-0"
                     size={28}
-                    style={{ color: '#4285F4' }} // Azul oficial Google Maps
+                    style={{ color: '#ef3e36' }} // Rojo O'Creamy
                   />
                 <span className="font-semibold text-ocreamy-brown">Google Maps</span>
               </a>
