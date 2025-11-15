@@ -39,7 +39,7 @@ const HeroCarousel = () => {
       ))}
 
       {/* Overlay Content */}
-      <div className="absolute bottom-8 left-0 right-0 z-10 flex flex-col items-center gap-4 px-4">
+      <div className="absolute bottom-20 md:bottom-8 left-0 right-0 z-10 flex flex-col items-center gap-4 px-4">
         <h1
           className="text-[clamp(1.4rem,2.2vw,2rem)] font-bold text-center text-white max-w-3xl"
           style={{ textShadow: "0 2px 8px rgba(0,0,0,0.3)" }}
@@ -51,8 +51,10 @@ const HeroCarousel = () => {
           className="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-lg transition-transform hover:scale-105"
           style={{ color: 'hsl(var(--ocreamy-brown))' }}
         >
-          <MapPin size={20} />
-          <span className="font-semibold">Mall Aventura Santa Anita · Nivel 3, Zona Oasis</span>
+          <MapPin size={20} className="flex-shrink-0" />
+          <span className="font-semibold leading-none text-center">
+             Mall Aventura Santa Anita · Nivel 3, Zona Oasis
+          </span>
         </Link>
       </div>
 
