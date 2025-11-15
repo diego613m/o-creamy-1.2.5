@@ -29,8 +29,22 @@ const Header = () => {
 
   return (
     <>
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-background shadow-sm'}`}>
-        <div className="oc-container">
+      <header
+        className={`
+          fixed left-0 right-0 z-50
+          transition-all duration-300
+          ${isScrolled ? 'top-3' : 'top-0'}
+        `}
+      >
+        <div
+          className={`
+            oc-container transition-all duration-300
+            ${isScrolled 
+              ? 'bg-white/95 backdrop-blur-md rounded-3xl shadow-xl border border-black/5 px-4 py-1'
+              : 'bg-background shadow-sm'
+            }
+          `}
+        >
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link to="/" className="relative h-[90px] md:h-[110px] w-auto">
