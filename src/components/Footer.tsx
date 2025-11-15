@@ -90,7 +90,7 @@ const Footer = () => {
               aria-label="Instagram"
             >
               <FaInstagram
-                size={30}
+                size={32}
                 className="text-white"
               />
             </a>
@@ -128,7 +128,7 @@ const Footer = () => {
               aria-label="WhatsApp"
             >
               <FaWhatsapp
-                size={31}
+                size={35}
                 className="text-white"
               />
 
