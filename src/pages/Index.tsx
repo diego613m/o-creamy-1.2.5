@@ -50,7 +50,7 @@ const Index = () => {
           <div className="oc-container">
             <h2 className="oc-section-title">¡Antójate hoy!</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="oc-card">
+              <div className="oc-card flex flex-col">
                 <div style={{ aspectRatio: "6 / 7" }} className="overflow-hidden">
                   <img
                     src="https://res.cloudinary.com/dw1eowmmp/image/upload/v1762620992/FAV_OBLEA_IMG_w2uz6j.jpg"
@@ -58,7 +58,7 @@ const Index = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-              <div className="p-6 flex flex-col items-center text-center">
+              <div className="p-6 flex flex-col items-center text-center flex-grow">
                 <h3 className="oc-subtitle mb-2">Obleas</h3>
                 <p className="mb-4 flex-grow" style={{ color: 'hsl(var(--muted-foreground))' }}>
                   Crocantes y deliciosas, con los mejores ingredientes
@@ -69,7 +69,7 @@ const Index = () => {
               </div>
               </div>
 
-              <div className="oc-card">
+              <div className="oc-card flex flex-col">
                 <div style={{ aspectRatio: "6 / 7" }} className="overflow-hidden">
                   <img
                     src="https://res.cloudinary.com/dw1eowmmp/image/upload/v1762620992/FAV_FRESAS_IMG_xbu8vv.jpg"
@@ -77,7 +77,7 @@ const Index = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-              <div className="p-6 flex flex-col items-center text-center">
+              <div className="p-6 flex flex-col items-center text-center flex-grow">
                 <h3 className="oc-subtitle mb-2">Fresas con crema</h3>
                 <p className="mb-4 flex-grow" style={{ color: 'hsl(var(--muted-foreground))' }}>
                   Frescas y cremosas, el postre perfecto
@@ -88,7 +88,7 @@ const Index = () => {
               </div>
               </div>
 
-              <div className="oc-card">
+              <div className="oc-card flex flex-col">
                 <div style={{ aspectRatio: "6 / 7" }} className="overflow-hidden">
                   <img
                     src="https://res.cloudinary.com/dw1eowmmp/image/upload/v1762620992/FAV_OBLEA_IMG_w2uz6j.jpg"
@@ -96,7 +96,7 @@ const Index = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-              <div className="p-6 flex flex-col items-center text-center">
+              <div className="p-6 flex flex-col items-center text-center flex-grow">
                 <h3 className="oc-subtitle mb-2">Toppings</h3>
                 <p className="mb-4 flex-grow" style={{ color: 'hsl(var(--muted-foreground))' }}>
                   Personaliza tu postre con nuestros toppings
