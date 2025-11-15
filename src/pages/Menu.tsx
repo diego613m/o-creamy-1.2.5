@@ -46,38 +46,49 @@ const Menu = () => {
         <div className="oc-container">
           <h1 className="oc-page-title">Carta</h1>
 
-          {/* Filter Pills */}
-          <div className="flex justify-center gap-2 mb-12 flex-wrap px-4">
-            <button
-              onClick={() => scrollToSection("obleas")}
-              className={`px-6 py-2 rounded-full font-semibold transition-all text-sm md:text-base ${
-                activeSection === "obleas"
-                  ? "bg-ocreamy-red text-white"
-                  : "bg-white text-ocreamy-brown border border-border"
-              }`}
+          {/* Filter Pills - Barra flotante debajo del header */}
+          <div className="sticky top-24 z-40 mb-12 px-4">
+            <div
+              className="
+                oc-container
+                bg-white/95 backdrop-blur-md rounded-3xl shadow-xl
+                flex justify-center gap-2 flex-wrap
+                px-3 py-2 md:px-6 md:py-3
+              "
             >
-              Obleas
-            </button>
-            <button
-              onClick={() => scrollToSection("fresas")}
-              className={`px-6 py-2 rounded-full font-semibold transition-all text-sm md:text-base ${
-                activeSection === "fresas"
-                  ? "bg-ocreamy-red text-white"
-                  : "bg-white text-ocreamy-brown border border-border"
-              }`}
-            >
-              Fresas con Crema
-            </button>
-            <button
-              onClick={() => scrollToSection("toppings")}
-              className={`px-6 py-2 rounded-full font-semibold transition-all text-sm md:text-base ${
-                activeSection === "toppings"
-                  ? "bg-ocreamy-red text-white"
-                  : "bg-white text-ocreamy-brown border border-border"
-              }`}
-            >
-              Toppings
-            </button>
+              <button
+                onClick={() => scrollToSection("obleas")}
+                className={`px-6 py-2 rounded-full font-semibold transition-all text-sm md:text-base ${
+                  activeSection === "obleas"
+                    ? "bg-ocreamy-red text-white"
+                    : "bg-white text-ocreamy-brown border border-border"
+                }`}
+              >
+                Obleas
+              </button>
+
+              <button
+                onClick={() => scrollToSection("fresas")}
+                className={`px-6 py-2 rounded-full font-semibold transition-all text-sm md:text-base ${
+                  activeSection === "fresas"
+                    ? "bg-ocreamy-red text-white"
+                    : "bg-white text-ocreamy-brown border border-border"
+                }`}
+              >
+                Fresas con Crema
+              </button>
+
+              <button
+                onClick={() => scrollToSection("toppings")}
+                className={`px-6 py-2 rounded-full font-semibold transition-all text-sm md:text-base ${
+                  activeSection === "toppings"
+                    ? "bg-ocreamy-red text-white"
+                    : "bg-white text-ocreamy-brown border border-border"
+                }`}
+              >
+                Toppings
+              </button>
+            </div>
           </div>
 
           {/* Obleas Section */}
