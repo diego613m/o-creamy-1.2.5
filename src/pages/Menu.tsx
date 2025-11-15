@@ -67,7 +67,7 @@ const Menu = () => {
 
           {/* Obleas Section */}
           <section id="obleas" className="mb-16">
-            <h2 className="text-3xl font-bold mb-2 text-ocreamy-brown">Obleas</h2>
+            <h2 className="text-3xl font-bold mb-2 text-ocreamy-red">Obleas</h2>
             
             {/* Clásicas */}
             <h3 className="text-xl font-semibold mb-6 text-ocreamy-brown-light">Clásicas</h3>
@@ -142,7 +142,7 @@ const Menu = () => {
 
           {/* Fresas Section */}
           <section id="fresas" className="mb-16">
-            <h2 className="text-3xl font-bold mb-2 text-ocreamy-brown">Fresas con Crema</h2>
+            <h2 className="text-3xl font-bold mb-2 text-ocreamy-red">Fresas con Crema</h2>
             <p className="mb-6 text-ocreamy-brown-light">
               Todos nuestros vasos incluyen: Fresas, Crema de Leche, Manjar y Masmelos
             </p>
@@ -232,7 +232,7 @@ const Menu = () => {
 
           {/* Toppings Section */}
           <section id="toppings" className="mb-16">
-            <h2 className="text-3xl font-bold mb-6 text-ocreamy-brown">Toppings</h2>
+            <h2 className="text-3xl font-bold mb-6 text-ocreamy-red">Toppings</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="oc-card flex flex-col">
                 <div style={{ aspectRatio: "6 / 7" }} className="overflow-hidden">
