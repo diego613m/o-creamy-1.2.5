@@ -61,14 +61,14 @@ const Footer = () => {
               <Link to="/politicas-de-cookies" className="transition-colors" style={{ color: 'hsl(var(--muted-foreground))' }}>
                 Políticas de cookies
               </Link>
+              <Link to="/politicas-de-cambios" className="transition-colors" style={{ color: 'hsl(var(--muted-foreground))' }}>
+                Política de cambios y devoluciones
+              </Link>
               <Link to="/terminos-y-condiciones" className="transition-colors" style={{ color: 'hsl(var(--muted-foreground))' }}>
                 Términos y condiciones
               </Link>
               <Link to="/preguntas-frecuentes" className="transition-colors" style={{ color: 'hsl(var(--muted-foreground))' }}>
                 Preguntas frecuentes
-              </Link>
-              <Link to="/politicas-de-cambios" className="transition-colors" style={{ color: 'hsl(var(--muted-foreground))' }}>
-                Política de cambios y devoluciones
               </Link>
             </div>
           </div>
