@@ -58,7 +58,7 @@ const Menu = () => {
           <h1 className="oc-page-title">Carta</h1>
 
           {/* Filter Pills - Barra flotante debajo del header */}
-          <div className="sticky top-28 z-40 mb-12 px-4">
+          <div className="sticky top-28 z-40 mb-8">
             <div
               className={`
                 oc-container
@@ -76,8 +76,8 @@ const Menu = () => {
               <button
                 onClick={() => scrollToSection("obleas")}
                 className={`rounded-full font-semibold transition-all
-                  text-[12px] sm:text-sm md:text-base 
-                  px-4 sm:px-4 md:px-8 
+                  text-[13px] sm:text-sm md:text-base 
+                  px-5 md:px-9 
                   py-1.5 md:py-2
                   ${
                     activeSection === "obleas"
@@ -92,8 +92,8 @@ const Menu = () => {
               <button
                 onClick={() => scrollToSection("fresas")}
                 className={`rounded-full font-semibold transition-all
-                  text-[12px] sm:text-sm md:text-base 
-                  px-4 sm:px-4 md:px-8
+                  text-[13px] sm:text-sm md:text-base 
+                  px-5 md:px-9
                   py-1.5 md:py-2  
                   ${
                     activeSection === "fresas"
@@ -108,8 +108,8 @@ const Menu = () => {
               <button
                 onClick={() => scrollToSection("toppings")}
                 className={`rounded-full font-semibold transition-all
-                  text-[12px] sm:text-sm md:text-base 
-                  px-4 sm:px-4 md:px-8 
+                  text-[13px] sm:text-sm md:text-base 
+                  px-5 md:px-9 
                   py-1.5 md:py-2  
                   ${
                     activeSection === "toppings"
