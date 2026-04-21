@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { HashRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Index from "./pages/Index";
 import Menu from "./pages/Menu";
@@ -35,11 +35,10 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <HashRouter>
+      <BrowserRouter>
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<PromoFeria />} />
-          <Route path="/home" element={<Index />} />
+          <Route path="/" element={<Index />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/ubicacion" element={<Ubicacion />} />
@@ -47,13 +46,13 @@ const App = () => (
           <Route path="/politicas-de-privacidad" element={<PoliticasDePrivacidad />} />
           <Route path="/politicas-de-cookies" element={<PoliticasDeCookies />} />
           <Route path="/terminos-y-condiciones" element={<TerminosYCondiciones />} />
-        <Route path="/preguntas-frecuentes" element={<PreguntasFrecuentes />} />
-        <Route path="/politicas-de-cambios" element={<PoliticasDeCambios />} />
-        <Route path="/promo-feria" element={<PromoFeria />} />
-        <Route path="/promo-success" element={<PromoSuccess />} />
-        <Route path="*" element={<NotFound />} />
+          <Route path="/preguntas-frecuentes" element={<PreguntasFrecuentes />} />
+          <Route path="/politicas-de-cambios" element={<PoliticasDeCambios />} />
+          <Route path="/promo-feria" element={<PromoFeria />} />
+          <Route path="/promo-success" element={<PromoSuccess />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
