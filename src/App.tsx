@@ -38,7 +38,8 @@ const App = () => (
       <HashRouter>
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/" element={<PromoFeria />} />
+          <Route path="/home" element={<Index />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/ubicacion" element={<Ubicacion />} />
