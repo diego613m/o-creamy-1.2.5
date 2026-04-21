@@ -14,6 +14,8 @@ import PoliticasDeCookies from "./pages/PoliticasDeCookies";
 import TerminosYCondiciones from "./pages/TerminosYCondiciones";
 import PreguntasFrecuentes from "./pages/PreguntasFrecuentes";
 import PoliticasDeCambios from "./pages/PoliticasDeCambios";
+import PromoFeria from "./pages/PromoFeria";
+import PromoSuccess from "./pages/PromoSuccess";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -46,6 +48,8 @@ const App = () => (
           <Route path="/terminos-y-condiciones" element={<TerminosYCondiciones />} />
         <Route path="/preguntas-frecuentes" element={<PreguntasFrecuentes />} />
         <Route path="/politicas-de-cambios" element={<PoliticasDeCambios />} />
+        <Route path="/promo-feria" element={<PromoFeria />} />
+        <Route path="/promo-success" element={<PromoSuccess />} />
         <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
