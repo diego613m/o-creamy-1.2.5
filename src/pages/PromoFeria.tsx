@@ -37,6 +37,8 @@ import {
   DialogFooter,
 } from "@/components/ui/dialog";
 
+import { Helmet } from "react-helmet-async";
+
 const formSchema = z.object({
   fullName: z.string().min(3, "Por favor, ingresa tu nombre completo"),
   email: z.string().email("Correo electrónico no válido"),
@@ -163,6 +165,14 @@ const PromoFeria = () => {
 
   return (
     <div className="min-h-screen bg-ocreamy-cream flex flex-col">
+      <Helmet>
+        <title>O'Creamy - ¡Promoción Feria! 🎡</title>
+        <meta property="og:title" content="¡Obtén tu 20% de descuento en O'Creamy! 🎡" />
+        <meta property="og:description" content="Regístrate y obtén un descuento de hasta el 20% en tus Obleas Especiales favoritas." />
+        <meta property="og:image" content="https://res.cloudinary.com/dw1eowmmp/image/upload/v1777491605/La_Llama_Fiestera_2_h5h9fu.png" />
+        <meta property="og:url" content="https://ocreamy.com.pe/promo-feria" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <Header />
       <main className="flex-grow pt-28 pb-12 px-4">
         <div className="max-w-2xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border-4 border-ocreamy-red/10">

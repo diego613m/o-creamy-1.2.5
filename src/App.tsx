@@ -18,6 +18,8 @@ import PromoFeria from "./pages/PromoFeria";
 import PromoSuccess from "./pages/PromoSuccess";
 import NotFound from "./pages/NotFound";
 
+import { HelmetProvider } from "react-helmet-async";
+
 const queryClient = new QueryClient();
 
 const ScrollToTop = () => {
@@ -31,13 +33,14 @@ const ScrollToTop = () => {
 };
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <ScrollToTop />
-        <Routes>
+  <HelmetProvider>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <ScrollToTop />
+          <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/nosotros" element={<Nosotros />} />
@@ -55,6 +58,7 @@ const App = () => (
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
+</HelmetProvider>
 );
 
 export default App;
