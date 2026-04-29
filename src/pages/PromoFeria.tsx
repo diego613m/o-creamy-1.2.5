@@ -169,7 +169,7 @@ const PromoFeria = () => {
           <div className="bg-ocreamy-red p-8 text-white text-center">
             <h1 className="text-3xl font-bold mb-2">¡Promoción Feria! 🎡</h1>
             <p className="text-white/90">
-              Regístrate y obtén un 20% de descuento en tus Obleas Especiales favoritas.
+              Regístrate y obtén un descuento de hasta el 20% en las Obleas Especiales favoritas.
             </p>
           </div>
 
@@ -319,6 +319,10 @@ const PromoFeria = () => {
                 >
                   ¡Quiero mi descuento! 🍦
                 </Button>
+
+                <p className="text-[10px] text-ocreamy-brown/60 text-center leading-tight">
+                  Válido un (01) descuento por persona. Indispensable presentar el código de registro enviado al correo electrónico, al momento de la compra en caja.
+                </p>
               </form>
             </Form>
           </div>
