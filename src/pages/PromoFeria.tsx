@@ -60,21 +60,28 @@ const PromoFeria = () => {
 
   const onSubmit = async (values: FormValues) => {
     try {
-      // 1. Validar duplicados (Correo o Teléfono)
-      const { data: existingLead, error: checkError } = await supabase
+      // 1. Validar duplicados de forma EXPLÍCITA
+      const { data: existingEmail, error: emailError } = await supabase
         .from("ocreamy_feria_leads")
-        .select("email, phone")
-        .or(`email.eq.${values.email},phone.eq.${values.phone}`)
+        .select("email")
+        .eq("email", values.email)
         .maybeSingle();
 
-      if (checkError) throw checkError;
+      if (emailError) throw emailError;
+      if (existingEmail) {
+        toast.error("Este correo ya ha sido registrado anteriormente.");
+        return;
+      }
 
-      if (existingLead) {
-        if (existingLead.email === values.email) {
-          toast.error("Este correo ya ha sido registrado anteriormente.");
-        } else {
-          toast.error("Este número de teléfono ya ha sido registrado anteriormente.");
-        }
+      const { data: existingPhone, error: phoneError } = await supabase
+        .from("ocreamy_feria_leads")
+        .select("phone")
+        .eq("phone", values.phone)
+        .maybeSingle();
+
+      if (phoneError) throw phoneError;
+      if (existingPhone) {
+        toast.error("Este número de teléfono ya ha sido registrado anteriormente.");
         return;
       }
 
