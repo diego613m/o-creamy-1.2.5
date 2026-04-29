@@ -30,14 +30,14 @@ import { Label } from "@/components/ui/label";
 const formSchema = z.object({
   fullName: z.string().min(3, "Por favor, ingresa tu nombre completo"),
   email: z.string().email("Correo electrónico no válido"),
-  birthdayDay: z.string().min(1, "Requerido"),
-  birthdayMonth: z.string().min(1, "Requerido"),
+  birthdayDay: z.string().min(1, "El día es obligatorio"),
+  birthdayMonth: z.string().min(1, "El mes es obligatorio"),
   phone: z.string().regex(/^9\d{8}$/, "Debe ser un número de celular de Perú (9 dígitos)"),
   hasChildren: z.enum(["yes", "no"], {
     required_error: "Por favor, selecciona una opción",
   }),
   dataAuth: z.boolean().refine((val) => val === true, {
-    message: "Debes autorizar el uso de datos para participar",
+    message: "Debes autorizar el uso de datos para recibir el descuento",
   }),
 });
 
@@ -60,9 +60,28 @@ const PromoFeria = () => {
 
   const onSubmit = async (values: FormValues) => {
     try {
+      // 1. Validar duplicados (Correo o Teléfono)
+      const { data: existingLead, error: checkError } = await supabase
+        .from("ocreamy_feria_leads")
+        .select("email, phone")
+        .or(`email.eq.${values.email},phone.eq.${values.phone}`)
+        .maybeSingle();
+
+      if (checkError) throw checkError;
+
+      if (existingLead) {
+        if (existingLead.email === values.email) {
+          toast.error("Este correo ya ha sido registrado anteriormente.");
+        } else {
+          toast.error("Este número de teléfono ya ha sido registrado anteriormente.");
+        }
+        return;
+      }
+
+      // 2. Si no hay duplicados, proceder con el registro
       const couponCode = `OBLEA-${Math.random().toString(36).substring(2, 7).toUpperCase()}`;
 
-      const { error } = await supabase.from("ocreamy_feria_leads").insert([
+      const { error: insertError } = await supabase.from("ocreamy_feria_leads").insert([
         {
           full_name: values.fullName,
           email: values.email,
@@ -75,7 +94,7 @@ const PromoFeria = () => {
         },
       ]);
 
-      if (error) throw error;
+      if (insertError) throw insertError;
 
       toast.success("¡Registro exitoso!");
       navigate("/promo-success", { state: { couponCode, fullName: values.fullName } });
