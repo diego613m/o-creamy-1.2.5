@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -27,6 +28,15 @@ import {
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogFooter,
+} from "@/components/ui/dialog";
+
 const formSchema = z.object({
   fullName: z.string().min(3, "Por favor, ingresa tu nombre completo"),
   email: z.string().email("Correo electrónico no válido"),
@@ -45,6 +55,11 @@ type FormValues = z.infer<typeof formSchema>;
 
 const PromoFeria = () => {
   const navigate = useNavigate();
+  const [errorModal, setErrorModal] = useState<{ open: boolean; message: string }>({
+    open: false,
+    message: "",
+  });
+
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -69,7 +84,10 @@ const PromoFeria = () => {
 
       if (emailError) throw emailError;
       if (existingEmail) {
-        toast.error("Este correo ya ha sido registrado anteriormente.");
+        setErrorModal({
+          open: true,
+          message: "Este correo ya tiene un descuento activo. ¡Revisa tu bandeja de entrada o intenta con otro!",
+        });
         return;
       }
 
@@ -81,7 +99,10 @@ const PromoFeria = () => {
 
       if (phoneError) throw phoneError;
       if (existingPhone) {
-        toast.error("Este número de teléfono ya ha sido registrado anteriormente.");
+        setErrorModal({
+          open: true,
+          message: "Este número de teléfono ya ha sido registrado anteriormente. Por favor, verifica tus datos.",
+        });
         return;
       }
 
@@ -104,11 +125,13 @@ const PromoFeria = () => {
       if (insertError) {
         // Código 23505 = Unique Violation (Duplicado)
         if (insertError.code === "23505") {
-          if (insertError.message.includes("email")) {
-            toast.error("Este correo ya tiene un descuento activo. ¡Revisa tu bandeja de entrada!");
-          } else if (insertError.message.includes("phone")) {
-            toast.error("Este número de teléfono ya ha sido registrado anteriormente.");
-          }
+          const isEmail = insertError.message.includes("email");
+          setErrorModal({
+            open: true,
+            message: isEmail 
+              ? "Este correo ya tiene un descuento activo. ¡Revisa tu bandeja de entrada!"
+              : "Este número de teléfono ya ha sido registrado anteriormente.",
+          });
           return;
         }
         throw insertError;
@@ -302,6 +325,27 @@ const PromoFeria = () => {
         </div>
       </main>
       <Footer />
+
+      <Dialog open={errorModal.open} onOpenChange={(open) => setErrorModal({ ...errorModal, open })}>
+        <DialogContent className="sm:max-w-md rounded-2xl border-ocreamy-red/20">
+          <DialogHeader>
+            <DialogTitle className="text-ocreamy-brown text-xl font-bold flex items-center gap-2">
+              <span className="text-ocreamy-red">⚠️</span> Aviso de Registro
+            </DialogTitle>
+            <DialogDescription className="text-ocreamy-brown/80 pt-4 text-base">
+              {errorModal.message}
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter className="mt-6">
+            <Button 
+              onClick={() => setErrorModal({ ...errorModal, open: false })}
+              className="w-full bg-ocreamy-red hover:bg-ocreamy-red/90 text-white rounded-xl font-bold"
+            >
+              Entendido
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
