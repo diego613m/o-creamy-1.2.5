@@ -167,7 +167,7 @@ const PromoFeria = () => {
       <main className="flex-grow pt-28 pb-12 px-4">
         <div className="max-w-2xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border-4 border-ocreamy-red/10">
           <div className="bg-ocreamy-red p-8 text-white text-center">
-            <h1 className="text-3xl font-bold mb-2">¡Sorteo de Feria! 🎡</h1>
+            <h1 className="text-3xl font-bold mb-2">¡Promoción Feria! 🎡</h1>
             <p className="text-white/90">
               Regístrate y obtén un 20% de descuento en tus Obleas Especiales favoritas.
             </p>
