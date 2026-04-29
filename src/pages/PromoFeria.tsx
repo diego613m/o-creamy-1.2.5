@@ -101,7 +101,18 @@ const PromoFeria = () => {
         },
       ]);
 
-      if (insertError) throw insertError;
+      if (insertError) {
+        // Código 23505 = Unique Violation (Duplicado)
+        if (insertError.code === "23505") {
+          if (insertError.message.includes("email")) {
+            toast.error("Este correo ya tiene un descuento activo. ¡Revisa tu bandeja de entrada!");
+          } else if (insertError.message.includes("phone")) {
+            toast.error("Este número de teléfono ya ha sido registrado anteriormente.");
+          }
+          return;
+        }
+        throw insertError;
+      }
 
       toast.success("¡Registro exitoso!");
       navigate("/promo-success", { state: { couponCode, fullName: values.fullName } });
